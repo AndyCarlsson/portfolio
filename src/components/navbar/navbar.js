@@ -1,17 +1,24 @@
 import React from 'react';
-import '../navbar/navbar.css';
+import { navbarItem } from './navbarItem';
+import '../navbar/navbar.scss';
 
 const Navbar = () => {
   return (
-    <div className='navbar-container'>
+    <nav className='navbar-container'>
       <p>AC</p>
-      <div className='navbar-link-container'>
-        <p>Work</p>
-        <p>About</p>
-        <p>Contact</p>
-      </div>
+      <ul className='navbar-link-container'>
+        {navbarItem.map((item, index) => {
+          return (
+            <li>
+              <a className={item.className} href={item.url}>
+                {item.title}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
       <p>Resume</p>
-    </div>
+    </nav>
   );
 };
 
