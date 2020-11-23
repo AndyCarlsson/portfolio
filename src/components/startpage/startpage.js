@@ -1,7 +1,7 @@
 import React from 'react';
-import '../startpage/startpage.css';
+import './startpage.scss';
 
-const Startpage = () => {
+function Startpage() {
   return (
     <div className='page-wrapper'>
       <section className='text-container'>
@@ -13,6 +13,6 @@ const Startpage = () => {
       </section>
     </div>
   );
-};
+}
 
 export default Startpage;

@@ -1,4 +1,4 @@
-export const navbarItem = [
+export const NavbarItems = [
   {
     title: 'Work',
     url: '#',

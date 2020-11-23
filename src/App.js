@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from './components/navbar/navbar';
+import Navbar from './components/Navbar/Navbar';
+import Startpage from './components/Startpage/Startpage';
 import 'normalize.css';
 import './app.css';
-import Startpage from './components/startpage/startpage';
 
 const App = () => {
   return (

@@ -6,11 +6,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-}
 
-.navbar-link-container {
-  width: 300px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  ul {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+    font-weight: 700;
+  }
 }

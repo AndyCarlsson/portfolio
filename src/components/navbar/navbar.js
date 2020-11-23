@@ -1,15 +1,15 @@
-import React from 'react';
-import { navbarItem } from './navbarItem';
-import '../navbar/navbar.scss';
+import React, { Component } from 'react';
+import { NavbarItems } from './NavbarItems';
+import './navbar.scss';
 
-const Navbar = () => {
+function Navbar() {
   return (
     <nav className='navbar-container'>
-      <p>AC</p>
-      <ul className='navbar-link-container'>
-        {navbarItem.map((item, index) => {
+      <a href='#'>AC</a>
+      <ul>
+        {NavbarItems.map((item, index) => {
           return (
-            <li>
+            <li key={index}>
               <a className={item.className} href={item.url}>
                 {item.title}
               </a>
@@ -17,9 +17,9 @@ const Navbar = () => {
           );
         })}
       </ul>
-      <p>Resume</p>
+      <a href='#'>Resume</a>
     </nav>
   );
-};
+}
 
 export default Navbar;
