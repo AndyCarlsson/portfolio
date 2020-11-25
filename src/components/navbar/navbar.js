@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { NavbarItems } from './NavbarItems';
 import './navbar.scss';
 
@@ -10,9 +11,9 @@ function Navbar() {
         {NavbarItems.map((item, index) => {
           return (
             <li key={index}>
-              <a className={item.className} href={item.url}>
-                {item.title}
-              </a>
+              <Link to={item.url}>
+                <a className={item.className}>{item.title}</a>
+              </Link>
             </li>
           );
         })}

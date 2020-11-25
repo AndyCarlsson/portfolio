@@ -1,17 +1,14 @@
 export const NavbarItems = [
   {
     title: 'Work',
-    url: '#',
-    className: 'navbar-link',
+    url: '/work',
   },
   {
     title: 'About',
-    url: '#',
-    className: 'navbar-link',
+    url: '/#',
   },
   {
     title: 'Contact',
-    url: '#',
-    className: 'navbar-link',
+    url: '/contact',
   },
 ];
