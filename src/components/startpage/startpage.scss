@@ -1,7 +1,9 @@
-.page-wrapper {
-  height: 93vh;
+.startpage-wrapper {
+  min-height: 93vh;
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .text-container {

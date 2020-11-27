@@ -6,7 +6,10 @@ import './navbar.scss';
 function Navbar() {
   return (
     <nav className='navbar-container'>
-      <a href='#'>AC</a>
+      <Link to='/'>
+        <h3>AC</h3>
+      </Link>
+
       <ul>
         {NavbarItems.map((item, index) => {
           return (

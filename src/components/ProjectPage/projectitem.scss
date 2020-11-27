@@ -1,0 +1,20 @@
+.project-item-wrapper {
+  width: 100%;
+  background-color: purple;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-item {
+  height: 400px;
+  width: 250px;
+  background-color: teal;
+}
+
+.image-container {
+  height: 30%;
+  background-color: yellow;
+}
