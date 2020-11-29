@@ -1,4 +1,5 @@
 import React from 'react';
+import EducationList from './EducationList';
 import './aboutpage.scss';
 
 function AboutPage() {
@@ -8,7 +9,9 @@ function AboutPage() {
         <h1>Image</h1>
         <p>Text about me</p>
       </div>
-      <div>List of experience</div>
+      <div className='experiences-container'>
+        <EducationList />
+      </div>
     </div>
   );
 }
