@@ -17,10 +17,4 @@ export const ProjectItemInfo = [
     title: 'Pokedex',
     description: 'Replica of the pokedex from the famous pokemon series',
   },
-  {
-    img: 'Image av Pokedex',
-    stackList: 'Xamarin Forms / C#',
-    title: 'Pokedex',
-    description: 'Replica of the pokedex from the famous pokemon series',
-  },
 ];

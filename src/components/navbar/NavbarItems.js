@@ -5,7 +5,7 @@ export const NavbarItems = [
   },
   {
     title: 'About',
-    url: '/#',
+    url: '/about',
   },
   {
     title: 'Contact',

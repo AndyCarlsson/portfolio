@@ -1,0 +1,16 @@
+.aboutpage-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 93vh;
+  background-color: red;
+}
+
+.personal-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 70%;
+  background-color: yellow;
+}
