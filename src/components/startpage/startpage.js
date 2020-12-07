@@ -1,5 +1,5 @@
 import React from 'react';
-import './startpage.scss';
+import './Startpage.scss';
 import 'normalize.css';
 
 function Startpage() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import EducationList from './EducationList';
-import './aboutpage.scss';
+import './AboutPage.scss';
 
 function AboutPage() {
   return (

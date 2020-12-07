@@ -1,6 +1,6 @@
 import React from 'react';
-import ProjectItem from './ProjectItem';
-import './projectpage.scss';
+import ProjectList from './ProjectList';
+import './ProjectPage.scss';
 
 function ProjectPage() {
   return (
@@ -8,7 +8,7 @@ function ProjectPage() {
       <div className='projects-text-area'>
         <p>Här finns det allmän text om mina projekt</p>
       </div>
-        <ProjectItem />
+        <ProjectList />
     </div>
   );
 }
