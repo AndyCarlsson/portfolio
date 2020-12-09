@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
-import Startpage from './components/Startpage/Startpage';
+import StartPage from './components/Startpage/StartPage';
 import ProjectPage from './components/ProjectPage/ProjectPage';
 import ContactPage from './components/ContactPage/ContactPage';
 import AboutPage from './components/AboutPage/AboutPage';
@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path='/' exact component={Startpage} />
+        <Route path='/' exact component={StartPage} />
         <Route path='/work' component={ProjectPage} />
         <Route path='/about' component={AboutPage} />
         <Route path='/contact' component={ContactPage} />
