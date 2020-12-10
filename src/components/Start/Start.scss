@@ -1,4 +1,4 @@
-.startpage-wrapper {
+.start-wrapper {
   min-height: 93vh;
   width: 100%;
   display: flex;
@@ -9,21 +9,28 @@
 .text-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 60%;
-  height: 60%;
+  min-height: 100%;
+  margin-bottom: 10%;
 
   h1 {
-    font-weight: 800;
-    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    color: #ededf1;
     padding: 0;
     margin: 0;
-    color: white;
   }
 
   p {
-    font-weight: 700;
-    font-size: 25px;
-    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #ededf1;
+    margin-top: 3px;
+  }
+
+  span {
+    color: #e1287e;
   }
 }

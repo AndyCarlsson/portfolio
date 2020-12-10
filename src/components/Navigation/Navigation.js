@@ -9,7 +9,6 @@ function Navigation() {
       <Link to='/'>
         <h3>AC</h3>
       </Link>
-
       <ul>
         {NavigationItems.map((item, index) => {
           return (
