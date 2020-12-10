@@ -1,11 +1,11 @@
 import React from 'react';
-import './ProjectList.scss';
-import { ProjectItems } from './ProjectItems';
+import './ProjectsList.scss';
+import { ProjectsItems } from './ProjectsItems';
 
-function ProjectList() {
+function ProjectsList() {
   return (
     <div className='project-item-wrapper'>
-      {ProjectItems.map((item, index) => {
+      {ProjectsItems.map((item, index) => {
         return (
           <div key={index} className="project-item">
             <div className='image-container'>{item.img}</div>
@@ -21,4 +21,4 @@ function ProjectList() {
   );
 }
 
-export default ProjectList;
+export default ProjectsList;

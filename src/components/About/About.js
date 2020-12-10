@@ -1,8 +1,8 @@
 import React from 'react';
 import EducationList from './EducationList';
-import './AboutPage.scss';
+import './About.scss';
 
-function AboutPage() {
+function About() {
   return (
     <div className='aboutpage-wrapper'>
       <div className='personal-info-container'>
@@ -16,4 +16,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default About;

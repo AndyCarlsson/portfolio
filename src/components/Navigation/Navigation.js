@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { NavbarItems } from './NavbarItems';
-import './Navbar.scss';
+import {  NavigationItems } from './NavigationItems';
+import './Navigation.scss';
 
-function Navbar() {
+function Navigation() {
   return (
     <nav className='navbar-container'>
       <Link to='/'>
@@ -11,7 +11,7 @@ function Navbar() {
       </Link>
 
       <ul>
-        {NavbarItems.map((item, index) => {
+        {NavigationItems.map((item, index) => {
           return (
             <li key={index}>
               <Link to={item.url}>
@@ -26,4 +26,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navigation;

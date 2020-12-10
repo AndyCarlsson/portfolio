@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
-import StartPage from './components/Startpage/StartPage';
-import ProjectPage from './components/ProjectPage/ProjectPage';
-import ContactPage from './components/ContactPage/ContactPage';
-import AboutPage from './components/AboutPage/AboutPage';
+import Navigation from './components/Navigation/Navigation';
+import Start from './components/Start/Start';
+import Projects from './components/Projects/Projects';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'normalize.css';
 import './app.css';
@@ -11,12 +11,12 @@ import './app.css';
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navigation />
       <Switch>
-        <Route path='/' exact component={StartPage} />
-        <Route path='/work' component={ProjectPage} />
-        <Route path='/about' component={AboutPage} />
-        <Route path='/contact' component={ContactPage} />
+        <Route path='/' exact component={Start} />
+        <Route path='/work' component={Projects} />
+        <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
       </Switch>
     </Router>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
-import './StartPage.scss';
+import './Start.scss';
 
-function StartPage() {
+function Start() {
   return (
     <div className='startpage-wrapper'>
       <section className='text-container'>
@@ -15,4 +15,4 @@ function StartPage() {
   );
 }
 
-export default StartPage;
+export default Start;

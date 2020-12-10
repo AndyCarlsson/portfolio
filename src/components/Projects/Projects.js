@@ -1,16 +1,16 @@
 import React from 'react';
-import ProjectList from './ProjectList';
-import './ProjectPage.scss';
+import ProjectsList from './ProjectsList';
+import './Projects.scss';
 
-function ProjectPage() {
+function Projects() {
   return (
     <div className='project-wrapper'>
       <div className='projects-text-area'>
         <p>Här finns det allmän text om mina projekt</p>
       </div>
-        <ProjectList />
+        <ProjectsList />
     </div>
   );
 }
 
-export default ProjectPage;
+export default Projects;

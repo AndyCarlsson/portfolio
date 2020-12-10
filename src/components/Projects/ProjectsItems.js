@@ -1,4 +1,4 @@
-export const ProjectItems = [
+export const ProjectsItems = [
     {
       img: 'Image av visaliserings app',
       stackList: 'C# / Blazor / HTML / CSS',
