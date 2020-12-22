@@ -20,7 +20,9 @@ function Navigation() {
           );
         })}
       </ul>
-      <a href='#'>Resume</a>
+      <Link to='/'>
+        <a href='#'>Resume</a>
+      </Link>
     </nav>
   );
 }
