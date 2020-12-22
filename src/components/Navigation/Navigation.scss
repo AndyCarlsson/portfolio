@@ -7,7 +7,7 @@
   align-items: center;
   padding: 0px 20px;
   background-color: yellow;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
 
   ul {
@@ -21,10 +21,11 @@
     text-decoration: none;
     font-weight: bold;
     color: #616161;
+    border-bottom: transparent 2px solid;
     :hover {
       color: white;
       border-bottom: #e1287e 2px solid;
-      transition: color 0.3s;
+      // transition: color 0.3s;
     }
   }
 }

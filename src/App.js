@@ -6,7 +6,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'normalize.css';
-import './app.css';
+import './App.css';
 
 function App() {
   return (
