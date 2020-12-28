@@ -1,6 +1,7 @@
 import React from 'react';
 import EducationList from './EducationList';
 import './About.scss';
+import WorkList from './WorkList';
 
 function About() {
   return (
@@ -11,6 +12,7 @@ function About() {
       </div>
       <div className="experiences-container">
       <EducationList />
+      <WorkList />
       </div>              
     </div>
   );
