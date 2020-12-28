@@ -8,13 +8,34 @@
 }
 
 .project-item {
-  height: 300px;
-  width: 250px;
-  border-radius: 10px;
-  background-color: teal;
+  height: 450px;
+  width: 350px;
+  background: rgba($color: #000000, $alpha: 0.3);
 }
 
 .image-container {
   height: 45%;
-  background-color: yellow;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  height: 45%;
+
+  .item-description {
+    margin-top: 10px;
+  }
+}
+
+.button-container {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }

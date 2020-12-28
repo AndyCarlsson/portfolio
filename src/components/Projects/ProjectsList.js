@@ -7,14 +7,18 @@ function ProjectsList() {
     <div className='project-item-wrapper'>
       {ProjectsItems.map((item, index) => {
         return (
-          <div key={index} className="project-item">
-            <div className='image-container'>{item.img}</div>
-            <div className='info-container'>
-              <p>{item.stackList}</p>
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
+            <div className="project-item" key={index}>
+              <div className='image-container'>{item.img}</div>
+              <div className='info-container'>
+                <p>{item.stackList}</p>
+                <h2>{item.title}</h2>
+                <p className="item-description">{item.description}</p>
+              </div>
+              <div className="button-container">
+                <a href="/">More info</a>
+                <a href={item.githubLink}>GitHub</a>
+              </div>
             </div>
-          </div>
         );
       })}
     </div>

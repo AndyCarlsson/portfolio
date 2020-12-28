@@ -20,9 +20,7 @@ function Navigation() {
           );
         })}
       </ul>
-      <Link to='/'>
-        <a href='#'>Resume</a>
-      </Link>
+        <button className="nav-resume-btn">Resume</button>
     </nav>
   );
 }

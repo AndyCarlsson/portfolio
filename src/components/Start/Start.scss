@@ -18,7 +18,6 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 5rem;
-    color: #ededf1;
     padding: 0;
     margin: 0;
   }
@@ -26,11 +25,13 @@
   p {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
-    color: #ededf1;
     margin-top: 3px;
   }
 
   span {
-    color: #e1287e;
+    // background: linear-gradient(#31dbff, #ff37cb);
+    // background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    color: #31dbff;
   }
 }
