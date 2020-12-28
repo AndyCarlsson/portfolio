@@ -1,10 +1,23 @@
 .education-list-wrapper {
   display: flex;
+  background: rgba($color: #000000, $alpha: 0.2);
   flex-direction: row;
-  background-color: yellow;
+  gap: 3%;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  margin-bottom: 3rem;
 }
 
 .time-period-container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1.8rem 1rem;
+  row-gap: 0;
+
+  span {
+    margin: 0.2rem;
+    font-size: 1.8rem;
+  }
 }

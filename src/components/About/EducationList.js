@@ -1,32 +1,34 @@
 import React from 'react';
 import './EducationList.scss';
+import { EducationItems } from './EducationItems';
 
 function EducationList() {
-  return (
-    <>
-      <h1>Education</h1>
-      <div className='education-list-wrapper'>
-        <div className='time-period-container'>
-          <div className='start-date-container'>
-            <h2>2019</h2>
-            <p>sep</p>
-          </div>
-          <div className='end-date-container'>
-            <h2>2021</h2>
-            <p>jun</p>
-          </div>
+  return (      
+      <div>
+        <h1>Education</h1>      
+        {EducationItems.map((item, index) => {
+          return (
+            <div className='education-list-wrapper' key={index}>
+              <div className='time-period-container'>
+                    <h2>{item.startYear}</h2>
+                    <span>-</span>
+                    <h2>{item.endYear}</h2>                    
+                    <p>{item.startMonth}</p>
+                    <span></span>                    
+                    <p>{item.endMonth}</p>
+              </div>
+                <div className='education-info-container'>
+                  <h2>{item.title}</h2>
+                  <p>{item.degree}</p>
+                  <p>{item.school}</p>
+                  <p>
+                   {item.description}
+                  </p>
+                </div>
+            </div>
+          );
+        })}
         </div>
-        <div className='education-info-container'>
-          <h2>System Developer .NET</h2>
-          <p>Higher Vocational Education</p>
-          <p>Newton Yrkeshögskola</p>
-          <p>
-            During my studies at University West I gained knowledge about
-            digital media production and design.
-          </p>
-        </div>
-      </div>
-    </>
   );
 }
 

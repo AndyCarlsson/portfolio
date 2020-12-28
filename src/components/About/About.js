@@ -9,9 +9,9 @@ function About() {
         <h1>Image</h1>
         <p>Text about me</p>
       </div>
-      <div className='experiences-container'>
-        <EducationList />
-      </div>
+      <div className="experiences-container">
+      <EducationList />
+      </div>              
     </div>
   );
 }

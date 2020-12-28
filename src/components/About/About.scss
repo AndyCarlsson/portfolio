@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   min-height: 93vh;
-  background-color: red;
 }
 
 .personal-info-container {
@@ -12,7 +11,7 @@
   justify-content: center;
   height: 400px;
   width: 70%;
-  background-color: yellow;
+  border-bottom: 2px solid white;
 }
 
 .experiences-container {
@@ -20,6 +19,5 @@
   flex-direction: column;
   align-items: center;
   width: 70%;
-  background-color: green;
   min-height: 600px;
 }
