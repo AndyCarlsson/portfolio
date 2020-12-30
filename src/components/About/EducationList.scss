@@ -1,11 +1,23 @@
 .education-list-wrapper {
   display: flex;
-  background: rgba($color: #000000, $alpha: 0.2);
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  h1 {
+    width: 60%;
+  }
+}
+
+.education-list-container {
+  min-width: 60%;
+  display: flex;
   flex-direction: row;
   gap: 3%;
   padding: 1rem;
   border-radius: 0.6rem;
   margin-bottom: 3rem;
+  background: rgba($color: #000000, $alpha: 0.2);
 }
 
 .time-period-container {

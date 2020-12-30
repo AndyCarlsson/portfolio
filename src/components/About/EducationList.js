@@ -4,11 +4,11 @@ import { EducationItems } from './EducationItems';
 
 function EducationList() {
   return (      
-      <div>
+      <div className='education-list-wrapper'>
         <h1>Education</h1>      
         {EducationItems.map((item, index) => {
           return (
-            <div className='education-list-wrapper' key={index}>
+            <div className='education-list-container' key={index}>
               <div className='time-period-container'>
                     <h2>{item.startYear}</h2>
                     <span>-</span>
@@ -28,7 +28,7 @@ function EducationList() {
             </div>
           );
         })}
-        </div>
+      </div>
   );
 }
 
