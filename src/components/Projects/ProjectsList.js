@@ -8,7 +8,7 @@ function ProjectsList() {
       {ProjectsItems.map((item, index) => {
         return (
             <div className="project-item" key={index}>
-              <div className='image-container'>{item.img}</div>
+              <div className='image-container'>{item.imgURL}</div>
               <div className='info-container'>
                 <p>{item.stackList}</p>
                 <h2>{item.title}</h2>

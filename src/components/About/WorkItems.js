@@ -1,6 +1,6 @@
 export const WorkItems = [
     { 
-        title: 'System Developer .NET',
+        title: 'Developer (internship)',
         workPlace: 'Plejd',
         description: 'During my internship at Plejd I was part of a team that developed a...',
         startYear: '2020',

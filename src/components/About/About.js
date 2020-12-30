@@ -11,8 +11,8 @@ function About() {
         <p>Text about me</p>
       </div>
       <div className="experiences-container">
-      <EducationList />
-      <WorkList />
+        <EducationList />
+        <WorkList />
       </div>              
     </div>
   );

@@ -19,6 +19,7 @@ function WorkList() {
                     </div>
                     <div className='work-info-container'>
                         <h2>{item.title}</h2>
+                        <p>{item.workPlace}</p>
                         <p>{item.school}</p>
                         <p>
                             {item.description}
