@@ -8,7 +8,8 @@ function Projects() {
       <div className='projects-text-area'>
         <p>Här finns det allmän text om mina projekt</p>
       </div>
-        <ProjectsList />
+
+      <ProjectsList />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {  NavigationItems } from './NavigationItems';
+import { NavigationItems } from './NavigationItems';
 import './Navigation.scss';
 
 function Navigation() {
@@ -20,7 +20,7 @@ function Navigation() {
           );
         })}
       </ul>
-        <button className="nav-resume-btn">Resume</button>
+      <button className='nav-resume-btn'>Resume</button>
     </nav>
   );
 }

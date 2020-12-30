@@ -4,13 +4,13 @@ import ContactInfoList from './ContactInfoList';
 
 function Contact() {
   return (
-  <div className='contact-page-wrapper'>
-    <h1>Contact</h1>
-    <div className='contact-info-wrapper'>
-      <ContactInfoList/>
+    <div className='contact-page-wrapper'>
+      <h1>Contact</h1>
+      <div className='contact-info-wrapper'>
+        <ContactInfoList />
+      </div>
     </div>
-  </div>
-  )
+  );
 }
 
 export default Contact;

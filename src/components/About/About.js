@@ -10,10 +10,10 @@ function About() {
         <h1>Image</h1>
         <p>Text about me</p>
       </div>
-      <div className="experiences-container">
+      <div className='experiences-container'>
         <EducationList />
         <WorkList />
-      </div>              
+      </div>
     </div>
   );
 }
