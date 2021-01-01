@@ -14,7 +14,7 @@ function Navigation() {
           return (
             <li key={index}>
               <Link to={item.url}>
-                <a className={item.className}>{item.title}</a>
+                <p className={item.className}>{item.title}</p>
               </Link>
             </li>
           );
