@@ -1,0 +1,47 @@
+.project-item {
+  height: 450px;
+  width: 350px;
+  border-radius: 10px;
+  background: rgba($color: #31dbff, $alpha: 0.1);
+}
+
+.stacklist-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  p {
+    font-size: 0.9rem;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+}
+
+.image-container {
+  height: 45%;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  height: 45%;
+
+  .item-description {
+    margin-top: 10px;
+  }
+}
+
+.button-container {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
