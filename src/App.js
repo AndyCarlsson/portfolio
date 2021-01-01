@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'normalize.css';
 import './App.css';
+import ProjectDetail from './components/Projects/ProjectsDetail/ProjectsDetail';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={Start} />
         <Route path='/work' component={Projects} />
+        <Route path='/projectDetail' component={ProjectDetail} />
         <Route path='/about' component={About} />
         <Route path='/contact' component={Contact} />
       </Switch>
