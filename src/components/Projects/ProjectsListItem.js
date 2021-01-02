@@ -13,10 +13,18 @@ function ProjectsListItem(props) {
           ))}
         </div>
         <h2>{props.item.title}</h2>
-        <p className='item-description'>{props.item.description}</p>
+        <p className='item-description'>{props.item.shortDescription}</p>
       </div>
       <div className='button-container'>
-        <Link to='/'>More info</Link>
+        <Link
+          to={{
+            pathname: `/work/${props.item.title}`,
+            state: {
+              object: props.item,
+            },
+          }}>
+          More info
+        </Link>
         <a href={props.item.githubLink} rel='noreferrer' target='_blank'>
           GitHub
         </a>
