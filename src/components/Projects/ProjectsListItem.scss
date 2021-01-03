@@ -1,8 +1,15 @@
 .project-item {
   height: 450px;
   width: 350px;
-  border-radius: 10px;
-  background: rgba($color: #31dbff, $alpha: 0.1);
+  border-radius: 5px;
+  background: rgb(6, 55, 65);
+  transition: 0.3s;
+}
+
+.project-item:hover {
+  background: rgb(9, 102, 121);
+  margin-bottom: 20px;
+  box-shadow: -5px 10px 10px 0px rgba(13, 102, 124, 0.3);
 }
 
 .stacklist-container {

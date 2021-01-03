@@ -5,11 +5,12 @@ function ProjectDetail(props) {
 
   useEffect(() => {
     setProject();
-  });
+  }, []);
 
   const setProject = () => {
     const selectedProject = props.location.state.object;
     setProjectObject(selectedProject);
+    console.log(selectedProject);
   };
 
   return (
