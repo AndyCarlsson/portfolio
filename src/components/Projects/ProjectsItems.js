@@ -1,3 +1,5 @@
+import xkcdThumbnail from '../../images/xkcdTnLowRes.webp';
+
 export const ProjectsItems = [
   {
     imgURL: 'Image av visaliserings app',
@@ -8,7 +10,7 @@ export const ProjectsItems = [
     githubLink: 'https://github.com/AndyCarlsson/blazor-sorting-visualization',
   },
   {
-    imgURL: 'Image av xkcd app',
+    imgURL: { xkcdThumbnail },
     stackList: ['C#', 'Blazor', 'html', 'css'],
     title: 'xkcd comic app',
     shortDescription: 'Short An mobile app that lets you view and save your favorite xkcd commics',
