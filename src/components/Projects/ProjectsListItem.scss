@@ -1,21 +1,24 @@
 .project-item {
-  height: 35rem;
-  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25rem;
+  width: 80%;
   border-radius: 5px;
   background: rgb(6, 55, 65);
   transition: 0.3s;
 }
 
-.project-item:hover {
-  background: rgb(9, 102, 121);
-  margin-bottom: 20px;
-  box-shadow: -5px 10px 10px 0px rgba(13, 102, 124, 0.3);
-
-  .image-container {
-    img {
-      opacity: 100%;
-    }
-  }
+.project-item-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  height: 25rem;
+  width: 80%;
+  border-radius: 5px;
+  background: rgb(6, 55, 65);
+  transition: 0.3s;
 }
 
 .stacklist-container {
@@ -25,10 +28,8 @@
 
   p {
     font-size: 0.9rem;
-    border: 1px solid white;
     padding: 7px;
     border-radius: 5px;
-    background-color: transparent;
   }
 }
 
@@ -53,16 +54,18 @@
   justify-content: space-between;
   padding: 10px;
   height: 15rem;
+  width: 50%;
 
   .item-description {
-    margin-top: 10px;
+    padding: 10px;
+    background-color: lightcoral;
   }
 }
 
 .button-container {
   margin-top: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 
   a {
     text-decoration: none;

@@ -11,7 +11,6 @@ function ProjectDetail(props) {
   const setProject = () => {
     const selectedProject = props.location.state.object;
     setProjectObject(selectedProject);
-    console.log(selectedProject);
   };
 
   return (

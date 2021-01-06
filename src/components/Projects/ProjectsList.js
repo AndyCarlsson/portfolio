@@ -7,7 +7,7 @@ function ProjectsList() {
   return (
     <div className='project-item-wrapper'>
       {ProjectsItems.map((item, index) => (
-        <ProjectsListItem item={item} key={index} />
+        <ProjectsListItem item={item} key={index} flexDirection={item.flexDirection} />
       ))}
     </div>
   );
