@@ -1,7 +1,8 @@
 import React from 'react';
-import Navigation from './components/Navigation/Navigation';
+import NavigationComponent from './components/Navigation/NavigationComponent';
+
 import Start from './components/Start/Start';
-import Projects from './components/Projects/Projects';
+import ProjectsPage from './components/Projects/ProjectsPage';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -11,10 +12,10 @@ import ProjectDetail from './components/Projects/ProjectsDetail/ProjectsDetail';
 function App() {
   return (
     <Router>
-      <Navigation />
+      <NavigationComponent />
       <Switch>
         <Route path='/' exact component={Start} />
-        <Route path='/work' exact component={Projects} />
+        <Route path='/work' exact component={ProjectsPage} />
         <Route path='/work/:id' component={ProjectDetail} />
         <Route path='/about' component={About} />
         <Route path='/contact' component={Contact} />

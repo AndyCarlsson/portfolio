@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import {
   Container,
   ProjectItemContainer,
@@ -8,11 +7,15 @@ import {
   Description,
   StackList,
   Image,
-} from './Styles/ProjectStyles';
+} from './styles/Projects';
 import './ProjectsListItem.scss';
 
 export default function ProjectsListItem({ children, direction = 'row', ...restProps }) {
-  return <ProjectItemContainer direction={direction}>{children}</ProjectItemContainer>;
+  return (
+    <ProjectItemContainer direction={direction} {...restProps}>
+      {children}
+    </ProjectItemContainer>
+  );
 }
 
 ProjectsListItem.Container = function ProjectsListItemContainer({ children, ...restProps }) {

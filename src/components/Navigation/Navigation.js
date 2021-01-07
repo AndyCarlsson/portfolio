@@ -1,28 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { NavigationItems } from './NavigationItems';
-import './Navigation.scss';
+import { Container, Logo, ItemUl, ItemLi, Link, Button } from './styles/Navigation';
 
-function Navigation() {
-  return (
-    <nav className='navbar-container'>
-      <Link to='/'>
-        <h3>AC</h3>
-      </Link>
-      <ul>
-        {NavigationItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link to={item.url}>
-                <p className={item.className}>{item.title}</p>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-      <button className='nav-resume-btn'>Resume</button>
-    </nav>
-  );
+export function Navigation({ children, ...restProps }) {
+  return <Container {...restProps}>{children}</Container>;
 }
 
-export default Navigation;
+Navigation.Logo = function NavigationLogo({ children, ...restProps }) {
+  return <Logo>{children}</Logo>;
+};
+
+Navigation.ItemUl = function NavigationItemUl({ children, ...restProps }) {
+  return <ItemUl>{children}</ItemUl>;
+};
+
+Navigation.ItemLi = function NavigationLi({ children, ...restProps }) {
+  return <ItemLi>{children}</ItemLi>;
+};
+
+Navigation.Link = function NavigationLink({ children, ...restProps }) {
+  return <Link>{children}</Link>;
+};
+
+Navigation.Button = function NavigationButton({ children, ...restProps }) {
+  return <Button>{children}</Button>;
+};

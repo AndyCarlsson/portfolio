@@ -1,14 +1,17 @@
 export const NavigationItems = [
   {
-    title: 'Work',
+    id: 1,
+    page: 'Work',
     url: '/work',
   },
   {
-    title: 'About',
+    id: 2,
+    page: 'About',
     url: '/about',
   },
   {
-    title: 'Contact',
+    id: 3,
+    page: 'Contact',
     url: '/contact',
   },
 ];

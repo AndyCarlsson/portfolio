@@ -2,15 +2,19 @@ import styled from 'styled-components/macro';
 
 export const Container = styled.div`
   width: 100%;
+  min-height: 93vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 5rem;
 `;
 
-export const ProjectItemContainer = styled.div`
+export const GeneralText = styled.p``;
+
+export const ListContainer = styled.div``;
+
+export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: ${({ direction }) => direction};
   align-items: center;
@@ -20,7 +24,7 @@ export const ProjectItemContainer = styled.div`
   background: rgb(6, 55, 65);
 `;
 
-export const InnerDiv = styled.div`
+export const Section = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

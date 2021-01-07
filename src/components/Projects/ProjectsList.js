@@ -14,7 +14,6 @@ function ProjectsList() {
             <ProjectsListItem.StackList>{item.stackList}</ProjectsListItem.StackList>
           </ProjectsListItem.InnerDiv>
           <ProjectsListItem.InnerDiv>
-            {/* C:\Users\andre\Projects\Personal\portfolio\src\images\stockphotoTest.jpg */}
             <ProjectsListItem.Image src={item.imgURL} alt={item.Alt} />
           </ProjectsListItem.InnerDiv>
         </ProjectsListItem>
