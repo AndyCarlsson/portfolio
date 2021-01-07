@@ -2,8 +2,10 @@ import xkcdThumbnail from '../../images/xkcdTnLowRes.webp';
 
 export const ProjectsItems = [
   {
-    className: 'project-item-reverse',
-    imgURL: 'Image av visaliserings app',
+    id: 1,
+    direction: 'row',
+    imgURL: './images/stockphotoTest.jpg',
+    imgAlt: 'Image av visaliserings app',
     stackList: ['C#', 'Blazor', 'html', 'css'],
     title: 'Sorting Algorithm Visualizer',
     shortDescription: 'Short App visualising different sorting algorithms',
@@ -11,8 +13,10 @@ export const ProjectsItems = [
     githubLink: 'https://github.com/AndyCarlsson/blazor-sorting-visualization',
   },
   {
-    className: 'project-item',
+    id: 2,
+    direction: 'row-reverse',
     imgURL: { xkcdThumbnail },
+    imgAlt: 'xkcd comic thumbnail',
     stackList: ['C#', 'Blazor', 'html', 'css'],
     title: 'xkcd comic app',
     shortDescription: 'Short An mobile app that lets you view and save your favorite xkcd commics',
@@ -20,8 +24,10 @@ export const ProjectsItems = [
     githubLink: 'https://github.com/AndyCarlsson/xkcd-comic-xamarinforms',
   },
   {
-    className: 'project-item-reverse',
+    id: 3,
+    direction: 'row',
     imgURL: 'Startpage',
+    imgAlt: 'Startpage thumbnail',
     stackList: ['C#', 'Blazor', 'html', 'css'],
     title: 'Startpage',
     shortDescription: 'Browser startpage',

@@ -1,42 +1,40 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {
+  Container,
+  ProjectItemContainer,
+  InnerDiv,
+  Title,
+  Description,
+  StackList,
+  Image,
+} from './Styles/ProjectStyles';
 import './ProjectsListItem.scss';
 
-function ProjectsListItem(props) {
-  return (
-    <div className={props.item.className}>
-      <div className='image-container'>
-        <img src={props.item.imgURL.xkcdThumbnail} alt='thumbnail' />
-      </div>
-      <div className='info-container'>
-        <div>
-          <h2>{props.item.title}</h2>
-          <div className='stacklist-container'>
-            {props.item.stackList.map((item, index) => (
-              <p key={index}>{item}</p>
-            ))}
-          </div>
-        </div>
-        <div className='item-description'>
-          <p>{props.item.shortDescription}</p>
-        </div>
-        <div className='button-container'>
-          <Link
-            to={{
-              pathname: `/work/${props.item.title}`,
-              state: {
-                object: props.item,
-              },
-            }}>
-            More info
-          </Link>
-          <a href={props.item.githubLink} rel='noreferrer' target='_blank'>
-            GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-  );
+export default function ProjectsListItem({ children, direction = 'row', ...restProps }) {
+  return <ProjectItemContainer direction={direction}>{children}</ProjectItemContainer>;
 }
 
-export default ProjectsListItem;
+ProjectsListItem.Container = function ProjectsListItemContainer({ children, ...restProps }) {
+  return <Container {...restProps}>{children}</Container>;
+};
+
+ProjectsListItem.InnerDiv = function ProjectsListItemInnerDiv({ children, ...restProps }) {
+  return <InnerDiv {...restProps}>{children}</InnerDiv>;
+};
+
+ProjectsListItem.Description = function ProjectsListItemDescription({ children, ...restProps }) {
+  return <Description {...restProps}>{children}</Description>;
+};
+
+ProjectsListItem.Title = function ProjectsListItemTitle({ children, ...restProps }) {
+  return <Title {...restProps}>{children}</Title>;
+};
+
+ProjectsListItem.StackList = function ProjectsListItemStackList({ children, ...restProps }) {
+  return <StackList {...restProps}>{children}</StackList>;
+};
+
+ProjectsListItem.Image = function ProjectsListItemImage({ ...restProps }) {
+  return <Image {...restProps} />;
+};
