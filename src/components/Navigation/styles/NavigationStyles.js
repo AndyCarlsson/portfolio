@@ -25,7 +25,7 @@ export const ItemUl = styled.ul`
 
 export const ItemLi = styled.li``;
 
-export const Link = styled.a`
+export const NavA = styled.a`
   text-decoration: none;
   border: none;
   font-weight: 700;

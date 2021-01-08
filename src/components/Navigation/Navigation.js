@@ -1,26 +1,22 @@
 import React from 'react';
-import { Container, Logo, ItemUl, ItemLi, Link, Button } from './styles/Navigation';
+import NavigationData from './NavigationData.json';
+import { Link } from 'react-router-dom';
+import { Container, Logo, ItemUl, ItemLi, NavA, Button } from './styles/NavigationStyles';
 
-export function Navigation({ children, ...restProps }) {
-  return <Container {...restProps}>{children}</Container>;
+export default function Navigation() {
+  return (
+    <Container>
+      <Logo>AC</Logo>
+      <ItemUl>
+        {NavigationData.map((item) => (
+          <ItemLi>
+            <Link to={item.url} style={{ textDecoration: 'none' }}>
+              <NavA>{item.page}</NavA>
+            </Link>
+          </ItemLi>
+        ))}
+      </ItemUl>
+      <Button>Resume</Button>
+    </Container>
+  );
 }
-
-Navigation.Logo = function NavigationLogo({ children, ...restProps }) {
-  return <Logo>{children}</Logo>;
-};
-
-Navigation.ItemUl = function NavigationItemUl({ children, ...restProps }) {
-  return <ItemUl>{children}</ItemUl>;
-};
-
-Navigation.ItemLi = function NavigationLi({ children, ...restProps }) {
-  return <ItemLi>{children}</ItemLi>;
-};
-
-Navigation.Link = function NavigationLink({ children, ...restProps }) {
-  return <Link>{children}</Link>;
-};
-
-Navigation.Button = function NavigationButton({ children, ...restProps }) {
-  return <Button>{children}</Button>;
-};

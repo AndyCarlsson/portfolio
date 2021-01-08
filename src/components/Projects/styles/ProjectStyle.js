@@ -12,14 +12,18 @@ export const Container = styled.div`
 
 export const GeneralText = styled.p``;
 
-export const ListContainer = styled.div``;
+export const ListContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+`;
 
 export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: ${({ direction }) => direction};
   align-items: center;
   height: 25rem;
-  width: 60%;
+  width: 100%;
   border-radius: 5px;
   background: rgb(6, 55, 65);
 `;
