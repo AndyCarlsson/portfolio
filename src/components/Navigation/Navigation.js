@@ -6,7 +6,11 @@ import { Container, Logo, ItemUl, ItemLi, NavA, Button } from './styles/Navigati
 export default function Navigation() {
   return (
     <Container>
-      <Logo>AC</Logo>
+      <Link to='/' style={{ textDecoration: 'none' }}>
+        <Logo>
+          <NavA>AC</NavA>
+        </Logo>
+      </Link>
       <ItemUl>
         {NavigationData.map((item) => (
           <ItemLi>

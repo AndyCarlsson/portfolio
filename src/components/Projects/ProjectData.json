@@ -2,7 +2,7 @@
   {
     "id": 1,
     "direction": "row",
-    "imgURL": "./images/stockphotoTest.jpg",
+    "imgURL": "/stockphotoTest.jpg",
     "imgAlt": "Image av visaliserings app",
     "stackList": ["C#", "Blazor", "html", "css"],
     "title": "Sorting Algorithm Visualizer",

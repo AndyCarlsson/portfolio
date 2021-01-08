@@ -1,32 +1,40 @@
 import React from 'react';
-import { WorkItems } from './WorkItems';
-import './WorkList.scss';
+import {
+  Container,
+  Title,
+  ItemContainer,
+  SubTitle,
+  Text,
+  Span,
+  DurationContainer,
+  InfoContainer,
+} from './styles/ListStyles';
+import WorkData from './data/WorkData.json';
 
 function WorkList() {
   return (
-    <div className='work-list-wrapper'>
-      <h1>Work</h1>
-      {WorkItems.map((item, index) => {
+    <Container>
+      <Title>Work Experience</Title>
+      {WorkData.map((item) => {
         return (
-          <div className='work-list-container' key={index}>
-            <div className='time-period-container'>
-              <h2>{item.startYear}</h2>
-              <span>-</span>
-              <h2>{item.endYear}</h2>
-              <p>{item.startMonth}</p>
-              <span></span>
-              <p>{item.endMonth}</p>
-            </div>
-            <div className='work-info-container'>
-              <h2>{item.title}</h2>
-              <p>{item.workPlace}</p>
-              <p>{item.school}</p>
-              <p>{item.description}</p>
-            </div>
-          </div>
+          <ItemContainer key={item.id}>
+            <DurationContainer>
+              <SubTitle>{item.startYear}</SubTitle>
+              <Span>-</Span>
+              <SubTitle>{item.endYear}</SubTitle>
+              <Text>{item.startMonth}</Text>
+              <Span></Span>
+              <Text>{item.endMonth}</Text>
+            </DurationContainer>
+            <InfoContainer>
+              <SubTitle>{item.title}</SubTitle>
+              <Text>{item.workPlace}</Text>
+              <Text>{item.description}</Text>
+            </InfoContainer>
+          </ItemContainer>
         );
       })}
-    </div>
+    </Container>
   );
 }
 

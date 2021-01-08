@@ -1,21 +1,20 @@
 import React from 'react';
-import './Start.scss';
+import { Container, TextContainer, Title, Description, Span } from './styles/StartStyles';
 
 function Start() {
   return (
-    <div className='start-wrapper'>
-      <section className='text-container'>
-        <h1>
-          Andreas Carlsson<span>.</span>
-        </h1>
-        <p>Gothenburg, Sweden.</p>
-        <p>
-          Minigolf <span>[</span>semi<span>]</span> pro.
-        </p>
-        <p>Aspiring developer.</p>
-        <p>Living to create.</p>
-      </section>
-    </div>
+    <Container>
+      <TextContainer>
+        <Title>Andreas Carlsson</Title>
+        <Description>Aspiring front end developer</Description>
+        <Description>Gothenburg, Sweden.</Description>
+        <Description>
+          Minigolf<Span>[</Span>semi<Span>]</Span>pro.
+        </Description>
+
+        <Description>Creative thinking.</Description>
+      </TextContainer>
+    </Container>
   );
 }
 
