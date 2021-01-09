@@ -5,13 +5,12 @@ function Start() {
   return (
     <Container>
       <TextContainer>
-        <Title>Andreas Carlsson</Title>
-        <Description>Aspiring front end developer</Description>
+        <Title>Andreas Carlsson.</Title>
+        <Description>Aspiring front end developer.</Description>
         <Description>Gothenburg, Sweden.</Description>
         <Description>
-          Minigolf<Span>[</Span>semi<Span>]</Span>pro.
+          Minigolf<Span> [</Span>semi<Span>] </Span>pro.
         </Description>
-
         <Description>Creative thinking.</Description>
       </TextContainer>
     </Container>

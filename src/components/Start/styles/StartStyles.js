@@ -20,6 +20,7 @@ export const TextContainer = styled.div`
 export const Title = styled.h1`
   font-weight: bold;
   font-size: 5rem;
+  color: #e85a4f;
   padding: 0;
   margin: 0;
 `;
@@ -30,5 +31,5 @@ export const Description = styled.p`
 `;
 
 export const Span = styled.span`
-  color: #31dbff;
+  color: #e85a4f;
 `;

@@ -29,21 +29,22 @@ export const NavA = styled.a`
   text-decoration: none;
   border: none;
   font-weight: 700;
-  color: #616161;
-  &:hover {
-    color: #ff37cb;
-    transition: color 0.3s;
-  }
-
-  &:visited {
-    text-decoration: none;
+  /* color: #141414; */
+  color: rgba(20, 20, 20, 0.5);
+  border-bottom: transparent solid 2px;
+  transition: all 0.3s;
+  :hover {
+    border-bottom: #e85a4f solid 2px;
+    color: rgba(20, 20, 20, 1);
   }
 `;
 
 export const Button = styled.button`
-  color: #31dbff;
   font-weight: 700;
-  background-color: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  color: #eae7dc;
+  background-color: #e85a4f;
   border: none;
   cursor: pointer;
 `;

@@ -10,8 +10,8 @@ export const GlobalStyles = createGlobalStyle`
 html,
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #f0ead6;
-  background-color: #0d0f11;
+  color: #141414;
+  background-color: #EAE7DC;
   font-size: 16px;
   min-height: 100vh;
   width: 100%;
