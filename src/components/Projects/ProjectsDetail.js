@@ -5,6 +5,7 @@ import {
   Title,
   StackList,
   ImageContainer,
+  ImageContainerInner,
   Image,
   DescriptionContainer,
   Description,
@@ -27,10 +28,15 @@ export default function ProjectDetail(props) {
     <Container>
       <TitleContainer>
         <Title>Title</Title>
-        <StackList></StackList>
+        <StackList>C# CSS HTML</StackList>
       </TitleContainer>
       <ImageContainer>
-        <Image />
+        <ImageContainerInner align='flex-end'>
+          <Image />
+        </ImageContainerInner>
+        <ImageContainerInner>
+          <Image />
+        </ImageContainerInner>
       </ImageContainer>
       <DescriptionContainer>
         <Description>Description</Description>

@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectData from './ProjectData.json';
+import ProjectData from './data/ProjectData.json';
 
 import {
   Container,
