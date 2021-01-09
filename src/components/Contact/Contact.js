@@ -1,15 +1,19 @@
 import React from 'react';
-import './Contact.scss';
-import ContactInfoList from './ContactInfoList';
+import ContactData from './data/ContactData.json';
+import { Container, ContainerInner, Image, Details } from './styles/ContactStyles';
 
 function Contact() {
   return (
-    <div className='contact-page-wrapper'>
-      <h1>Contact</h1>
-      <div className='contact-info-wrapper'>
-        <ContactInfoList />
-      </div>
-    </div>
+    <Container>
+      {ContactData.map((item) => {
+        return (
+          <ContainerInner key={item.id}>
+            <Image src={item.imgURL} alt={item.imgAlt} />
+            <Details>{item.details}</Details>
+          </ContainerInner>
+        );
+      })}
+    </Container>
   );
 }
 
