@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProjectData from './data/ProjectData.json';
 
 import {
@@ -10,7 +11,10 @@ import {
   Section,
   Title,
   Description,
-  StackList,
+  LinkContainer,
+  MyLink,
+  TechStackContainer,
+  TechStackItem,
   Image,
 } from './styles/ProjectStyle';
 
@@ -24,10 +28,21 @@ export default function Projects() {
             <Section>
               <TitleSektion>
                 <Title>{item.title}</Title>
-                <StackList>{item.stackList}</StackList>
+                <TechStackContainer>
+                  {item.stackList.map((item) => (
+                    <TechStackItem>{item}</TechStackItem>
+                  ))}
+                </TechStackContainer>
               </TitleSektion>
               <Description>{item.shortDescription}</Description>
-              <Description>Github</Description>
+              <LinkContainer>
+                <MyLink href={item.githubLink} target='_blank'>
+                  Github
+                </MyLink>
+                <Link style={{ textDecoration: 'none' }}>
+                  <MyLink>More info</MyLink>
+                </Link>
+              </LinkContainer>
             </Section>
             <Section>
               <Image src={item.imgURL} alt={item.Alt} />

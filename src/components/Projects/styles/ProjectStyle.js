@@ -17,8 +17,10 @@ export const GeneralText = styled.p`
 
 export const ListContainer = styled.div`
   width: 100%;
+  height: 70vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: ${({ bgColor }) => bgColor};
   padding: 20px;
 `;
@@ -47,7 +49,22 @@ export const Title = styled.h1``;
 
 export const Description = styled.p``;
 
-export const StackList = styled.p`
+export const LinkContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+
+export const MyLink = styled.a`
+  text-decoration: none;
+  color: #141414;
+`;
+
+export const TechStackContainer = styled.div`
+  display: flex;
+  gap: 1.3rem;
+`;
+
+export const TechStackItem = styled.p`
   font-weight: 700;
   color: #e85a4f;
 `;
