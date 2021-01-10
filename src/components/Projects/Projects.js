@@ -6,6 +6,7 @@ import {
   GeneralText,
   ListContainer,
   ProjectContainer,
+  TitleSektion,
   Section,
   Title,
   Description,
@@ -17,20 +18,23 @@ export default function Projects() {
   return (
     <Container>
       <GeneralText>Text om mina project</GeneralText>
-      <ListContainer>
-        {ProjectData.map((item) => (
-          <ProjectContainer item={item} key={item.id} direction={item.direction}>
+      {ProjectData.map((item) => (
+        <ListContainer item={item} key={item.id} bgColor={item.bgColor}>
+          <ProjectContainer direction={item.direction}>
             <Section>
-              <Title>{item.title}</Title>
+              <TitleSektion>
+                <Title>{item.title}</Title>
+                <StackList>{item.stackList}</StackList>
+              </TitleSektion>
               <Description>{item.shortDescription}</Description>
-              <StackList>{item.stackList}</StackList>
+              <Description>Github</Description>
             </Section>
             <Section>
               <Image src={item.imgURL} alt={item.Alt} />
             </Section>
           </ProjectContainer>
-        ))}
-      </ListContainer>
+        </ListContainer>
+      ))}
     </Container>
   );
 }

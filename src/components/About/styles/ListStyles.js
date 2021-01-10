@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
   width: 100%;
 `;
@@ -19,7 +19,8 @@ export const ItemContainer = styled.div`
   gap: 1.5rem;
   padding: 1rem;
   border-radius: 10px;
-  background-color: lightcoral;
+  color: #fff;
+  background-color: #e85a4f;
 `;
 
 export const SubTitle = styled.h2``;

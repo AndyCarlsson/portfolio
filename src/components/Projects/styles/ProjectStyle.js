@@ -7,40 +7,50 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
 `;
 
-export const GeneralText = styled.p``;
+export const GeneralText = styled.p`
+  height: 20rem;
+  display: flex;
+  align-items: center;
+`;
 
 export const ListContainer = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  justify-content: center;
+  background-color: ${({ bgColor }) => bgColor};
+  padding: 20px;
 `;
 
 export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: ${({ direction }) => direction};
   align-items: center;
+  gap: 2rem;
   height: 25rem;
-  width: 100%;
+  width: 60%;
   border-radius: 5px;
-  background: rgb(6, 55, 65);
 `;
+
+export const TitleSektion = styled.div``;
 
 export const Section = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 100%;
   width: 50%;
 `;
 
 export const Title = styled.h1``;
 
-export const Description = styled.h2``;
+export const Description = styled.p``;
 
-export const StackList = styled.p``;
+export const StackList = styled.p`
+  font-weight: 700;
+  color: #e85a4f;
+`;
 
 export const Image = styled.img`
   height: 100%;

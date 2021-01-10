@@ -41,10 +41,16 @@ export const NavA = styled.a`
 
 export const Button = styled.button`
   font-weight: 700;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
-  color: #eae7dc;
-  background-color: #e85a4f;
+  color: rgba(20, 20, 20, 0.5);
+  background: transparent;
   border: none;
   cursor: pointer;
+
+  transition: all 0.3s;
+
+  :hover {
+    color: #e85a4f;
+  }
 `;

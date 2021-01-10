@@ -2,6 +2,7 @@
   {
     "id": 1,
     "direction": "row",
+    "bgColor": "#dbd9d3",
     "imgURL": "/stockphotoTest.jpg",
     "imgAlt": "Image av visaliserings app",
     "stackList": ["C#", "Blazor", "html", "css"],
@@ -13,6 +14,7 @@
   {
     "id": 2,
     "direction": "row-reverse",
+    "bgColor": "#EAE7DC",
     "imgURL": "./images/stockphotoTest.jpg",
     "imgAlt": "xkcd comic thumbnail",
     "stackList": ["C#", "Blazor", "html", "css"],
@@ -24,6 +26,7 @@
   {
     "id": 3,
     "direction": "row",
+    "bgColor": "#dbd9d3",
     "imgURL": "Startpage",
     "imgAlt": "Startpage thumbnail",
     "stackList": ["C#", "Blazor", "html", "css"],
