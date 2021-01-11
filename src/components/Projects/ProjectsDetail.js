@@ -3,34 +3,40 @@ import {
   Container,
   TitleContainer,
   Title,
-  StackList,
+  TechStackItem,
   ImageContainer,
   ImageContainerInner,
   Image,
   DescriptionContainer,
   Description,
   VideoContainer,
+  StackContainer,
 } from './styles/ProjectDetailStyles';
 
 export default function ProjectDetail(props) {
-  const [projectObject, setProjectObject] = useState({});
+  const [project, setProject] = useState({});
 
   useEffect(() => {
-    console.log(props.location.state);
-    setProject();
+    fetchProject();
   }, []);
 
-  const setProject = () => {
-    // // const selectedProject = this.props.location.state;
-    // console.log(this.props.location.state);
-    // setProjectObject(selectedProject);
+  const fetchProject = () => {
+    const selectedProject = props.location.state.object;
+    setProject(selectedProject);
   };
+
+  let stackListDiv;
+  if (project.stackList) {
+    stackListDiv = project.stackList.map((item) => {
+      return <TechStackItem key={item}>{item}</TechStackItem>;
+    });
+  }
 
   return (
     <Container>
       <TitleContainer>
-        <Title>Title</Title>
-        <StackList>C# CSS HTML</StackList>
+        <Title>{project.title}</Title>
+        <StackContainer>{stackListDiv}</StackContainer>
       </TitleContainer>
       <ImageContainer>
         <ImageContainerInner align='flex-end'>

@@ -13,7 +13,7 @@ export default function Navigation() {
       </Link>
       <ItemUl>
         {NavigationData.map((item) => (
-          <ItemLi>
+          <ItemLi key={item.id}>
             <Link to={item.url} style={{ textDecoration: 'none' }}>
               <NavA>{item.page}</NavA>
             </Link>

@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 export const Container = styled.div`
   min-height: 93vh;
   width: 100%;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,9 +15,19 @@ export const TitleContainer = styled.div`
   width: 70%;
 `;
 
-export const Title = styled.h1``;
+export const StackContainer = styled.div`
+  font-weight: 700;
+  color: #e85a4f;
+  display: flex;
+  gap: 1.3rem;
+`;
 
-export const StackList = styled.p``;
+export const TechStackItem = styled.p`
+  font-weight: 700;
+  color: #e85a4f;
+`;
+
+export const Title = styled.h1``;
 
 export const ImageContainer = styled.div`
   width: 70%;

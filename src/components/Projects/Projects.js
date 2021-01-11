@@ -44,7 +44,7 @@ export default function Projects() {
                   to={{
                     pathname: `/work/${item.title}`,
                     state: {
-                      projectObject: item,
+                      object: item,
                     },
                   }}>
                   <MyLink>More info</MyLink>

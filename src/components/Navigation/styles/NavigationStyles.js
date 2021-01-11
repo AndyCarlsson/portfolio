@@ -29,7 +29,6 @@ export const NavA = styled.a`
   text-decoration: none;
   border: none;
   font-weight: 700;
-  /* color: #141414; */
   color: rgba(20, 20, 20, 0.5);
   border-bottom: transparent solid 2px;
   transition: all 0.3s;
