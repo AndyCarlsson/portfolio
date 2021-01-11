@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.3rem;
   align-items: center;
   width: 100%;
 `;
@@ -19,11 +19,19 @@ export const ItemContainer = styled.div`
   gap: 1.5rem;
   padding: 1rem;
   border-radius: 10px;
-  color: #fff;
-  background-color: #e85a4f;
+  background-color: #dbd9d3;
 `;
 
-export const SubTitle = styled.h2``;
+export const ItemTitle = styled.h2`
+  color: #e85a4f;
+`;
+
+export const Year = styled.h2``;
+
+export const Month = styled.p`
+  font-weight: 700;
+  color: #e85a4f;
+`;
 
 export const Text = styled.p``;
 

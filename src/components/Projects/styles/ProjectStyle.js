@@ -1,5 +1,7 @@
 import styled from 'styled-components/macro';
 
+import { Link } from 'react-router-dom';
+
 export const Container = styled.div`
   width: 100%;
   min-height: 93vh;
@@ -17,7 +19,7 @@ export const GeneralText = styled.p`
 
 export const ListContainer = styled.div`
   width: 100%;
-  height: 70vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,16 +47,26 @@ export const Section = styled.div`
   width: 50%;
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+  margin: 0;
+  margin-bottom: 10px;
+`;
 
-export const Description = styled.p``;
+export const Description = styled.p`
+  margin-top: 1.3rem;
+`;
 
 export const LinkContainer = styled.div`
   display: flex;
   gap: 1rem;
 `;
 
-export const MyLink = styled.a`
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #141414;
+`;
+
+export const ExternalLink = styled.a`
   text-decoration: none;
   color: #141414;
 `;

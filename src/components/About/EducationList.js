@@ -1,9 +1,11 @@
 import React from 'react';
 import {
+  Year,
+  Month,
   Container,
   Title,
   ItemContainer,
-  SubTitle,
+  ItemTitle,
   Text,
   Span,
   DurationContainer,
@@ -19,15 +21,15 @@ function EducationList() {
         return (
           <ItemContainer key={item.id}>
             <DurationContainer>
-              <SubTitle>{item.startYear}</SubTitle>
+              <Year>{item.startYear}</Year>
               <Span>-</Span>
-              <SubTitle>{item.endYear}</SubTitle>
-              <Text>{item.startMonth}</Text>
+              <Year>{item.endYear}</Year>
+              <Month>{item.startMonth}</Month>
               <Span></Span>
-              <Text>{item.endMonth}</Text>
+              <Month>{item.endMonth}</Month>
             </DurationContainer>
             <InfoContainer>
-              <SubTitle>{item.title}</SubTitle>
+              <ItemTitle>{item.title}</ItemTitle>
               <Text>{item.degree}</Text>
               <Text>{item.school}</Text>
               <Text>{item.description}</Text>

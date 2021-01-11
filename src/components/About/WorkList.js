@@ -3,7 +3,9 @@ import {
   Container,
   Title,
   ItemContainer,
-  SubTitle,
+  Year,
+  Month,
+  ItemTitle,
   Text,
   Span,
   DurationContainer,
@@ -19,15 +21,15 @@ function WorkList() {
         return (
           <ItemContainer key={item.id}>
             <DurationContainer>
-              <SubTitle>{item.startYear}</SubTitle>
+              <Year>{item.startYear}</Year>
               <Span>-</Span>
-              <SubTitle>{item.endYear}</SubTitle>
-              <Text>{item.startMonth}</Text>
+              <Year>{item.endYear}</Year>
+              <Month>{item.startMonth}</Month>
               <Span></Span>
-              <Text>{item.endMonth}</Text>
+              <Month>{item.endMonth}</Month>
             </DurationContainer>
             <InfoContainer>
-              <SubTitle>{item.title}</SubTitle>
+              <ItemTitle>{item.title}</ItemTitle>
               <Text>{item.workPlace}</Text>
               <Text>{item.description}</Text>
             </InfoContainer>

@@ -10,7 +10,7 @@ function About() {
         <Image src='/stockphotoTest.jpg' />
         <Text>Text om mig här</Text>
       </InnerContainer>
-      <InnerContainer direction='column' gap='8rem'>
+      <InnerContainer direction='column' gap='3rem'>
         <EducationList />
         <WorkList />
       </InnerContainer>

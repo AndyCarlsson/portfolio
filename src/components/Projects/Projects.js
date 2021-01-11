@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import ProjectData from './data/ProjectData.json';
 
 import {
@@ -12,7 +11,8 @@ import {
   Title,
   Description,
   LinkContainer,
-  MyLink,
+  StyledLink,
+  ExternalLink,
   TechStackContainer,
   TechStackItem,
   Image,
@@ -21,7 +21,9 @@ import {
 export default function Projects() {
   return (
     <Container>
-      <GeneralText>Text om mina project</GeneralText>
+      {/* <GeneralText>
+        Below you can view some of my personal projects I worked on in my spare time.
+      </GeneralText> */}
       {ProjectData.map((item) => (
         <ListContainer item={item} key={item.id} bgColor={item.bgColor}>
           <ProjectContainer direction={item.direction}>
@@ -30,25 +32,24 @@ export default function Projects() {
                 <Title>{item.title}</Title>
                 <TechStackContainer>
                   {item.stackList.map((item) => (
-                    <TechStackItem>{item}</TechStackItem>
+                    <TechStackItem key={item}>{item}</TechStackItem>
                   ))}
                 </TechStackContainer>
+                <Description>{item.shortDescription}</Description>
               </TitleSektion>
-              <Description>{item.shortDescription}</Description>
               <LinkContainer>
-                <MyLink href={item.githubLink} target='_blank'>
+                <ExternalLink href={item.githubLink} rel='noreferrer' target='_blank'>
                   Github
-                </MyLink>
-                <Link
-                  style={{ textDecoration: 'none' }}
+                </ExternalLink>
+                <StyledLink
                   to={{
                     pathname: `/work/${item.title}`,
                     state: {
                       object: item,
                     },
                   }}>
-                  <MyLink>More info</MyLink>
-                </Link>
+                  More info
+                </StyledLink>
               </LinkContainer>
             </Section>
             <Section>
