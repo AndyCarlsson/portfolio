@@ -13,16 +13,18 @@ import {
 } from './styles/ProjectDetailStyles';
 
 export default function ProjectDetail(props) {
-  // const [projectObject, setProjectObject] = useState({});
+  const [projectObject, setProjectObject] = useState({});
 
-  // useEffect(() => {
-  //   setProject();
-  // }, []);
+  useEffect(() => {
+    console.log(props.location.state);
+    setProject();
+  }, []);
 
-  // const setProject = () => {
-  //   const selectedProject = props.location.state.object;
-  //   setProjectObject(selectedProject);
-  // };
+  const setProject = () => {
+    // // const selectedProject = this.props.location.state;
+    // console.log(this.props.location.state);
+    // setProjectObject(selectedProject);
+  };
 
   return (
     <Container>

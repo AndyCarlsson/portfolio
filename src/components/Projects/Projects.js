@@ -39,7 +39,14 @@ export default function Projects() {
                 <MyLink href={item.githubLink} target='_blank'>
                   Github
                 </MyLink>
-                <Link style={{ textDecoration: 'none' }}>
+                <Link
+                  style={{ textDecoration: 'none' }}
+                  to={{
+                    pathname: `/work/${item.title}`,
+                    state: {
+                      projectObject: item,
+                    },
+                  }}>
                   <MyLink>More info</MyLink>
                 </Link>
               </LinkContainer>
@@ -53,35 +60,3 @@ export default function Projects() {
     </Container>
   );
 }
-
-// Projects.GeneralText = function ProjectsGeneralText({ children, ...restProps }) {
-//   return <GeneralText>{children}</GeneralText>;
-// };
-
-// Projects.ListContainer = function ProjectsListContainer({ children, ...restProps }) {
-//   return <ListContainer>{children}</ListContainer>;
-// };
-
-// Projects.ProjectContainer = function ProjectsProjectContainer({ children, ...restProps }) {
-//   return <ProjectContainer>{children}</ProjectContainer>;
-// };
-
-// Projects.Section = function ProjectsSection({ children, ...restProps }) {
-//   return <Section>{children}</Section>;
-// };
-
-// Projects.Title = function ProjectsTitle({ children, ...restProps }) {
-//   return <Title>{children}</Title>;
-// };
-
-// Projects.Description = function ProjectsDescription({ children, ...restProps }) {
-//   return <Description>{children}</Description>;
-// };
-
-// Projects.StackList = function ProjectsStackList({ children, ...restProps }) {
-//   return <StackList>{children}</StackList>;
-// };
-
-// Projects.Image = function ProjectsImage({ ...restProps }) {
-//   return <Image {...restProps} />;
-// };
