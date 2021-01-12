@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 5rem;
 `;
 
 export const TitleContainer = styled.div`
@@ -31,7 +31,7 @@ export const Title = styled.h1``;
 
 export const ImageContainer = styled.div`
   width: 70%;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: row;
 `;

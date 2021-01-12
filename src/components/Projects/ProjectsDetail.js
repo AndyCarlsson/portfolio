@@ -39,11 +39,11 @@ export default function ProjectDetail(props) {
         <StackContainer>{stackListDiv}</StackContainer>
       </TitleContainer>
       <ImageContainer>
-        <ImageContainerInner align='flex-end'>
-          <Image />
+        <ImageContainerInner align='center'>
+          <Image src={project.imgURL} />
         </ImageContainerInner>
-        <ImageContainerInner>
-          <Image />
+        <ImageContainerInner align='flex-start'>
+          <Image src={project.imgURL} />
         </ImageContainerInner>
       </ImageContainer>
       <DescriptionContainer>

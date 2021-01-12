@@ -21,9 +21,6 @@ import {
 export default function Projects() {
   return (
     <Container>
-      {/* <GeneralText>
-        Below you can view some of my personal projects I worked on in my spare time.
-      </GeneralText> */}
       {ProjectData.map((item) => (
         <ListContainer item={item} key={item.id} bgColor={item.bgColor}>
           <ProjectContainer direction={item.direction}>

@@ -32,9 +32,14 @@ export const ProjectContainer = styled.div`
   flex-direction: ${({ direction }) => direction};
   align-items: center;
   gap: 2rem;
-  height: 25rem;
+  height: 100%;
   width: 60%;
   border-radius: 5px;
+
+  @media (max-width: 480px) {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 `;
 
 export const TitleSektion = styled.div``;
@@ -45,11 +50,20 @@ export const Section = styled.div`
   justify-content: space-around;
   height: 100%;
   width: 50%;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h1`
   margin: 0;
   margin-bottom: 10px;
+
+  @media (max-width: 480px) {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+  }
 `;
 
 export const Description = styled.p`
@@ -59,6 +73,11 @@ export const Description = styled.p`
 export const LinkContainer = styled.div`
   display: flex;
   gap: 1rem;
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-top: 2rem;
+  }
 `;
 
 export const StyledLink = styled(Link)`
@@ -83,5 +102,6 @@ export const TechStackItem = styled.p`
 
 export const Image = styled.img`
   height: 100%;
-  background-color: lightcoral;
+  width: 100%;
+  border-radius: 10px;
 `;
