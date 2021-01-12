@@ -9,10 +9,18 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 5rem;
+
+  @media (max-width: 480px) {
+    margin-top: 3rem;
+  }
 `;
 
 export const TitleContainer = styled.div`
   width: 70%;
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
 `;
 
 export const StackContainer = styled.div`
@@ -34,6 +42,11 @@ export const ImageContainer = styled.div`
   height: 70vh;
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 export const ImageContainerInner = styled.div`
@@ -42,18 +55,30 @@ export const ImageContainerInner = styled.div`
   align-items: ${({ align }) => align};
   height: 100%;
   width: 50%;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const Image = styled.img`
   height: 45vh;
   width: 80%;
   background-color: lightblue;
+
+  @media (max-width: 480px) {
+    width: 90%;
+    height: 90%;
+  }
 `;
 
 export const DescriptionContainer = styled.div`
   background-color: lightgreen;
   height: 50vh;
   width: 70%;
+  @media (max-width: 480px) {
+    width: 90%;
+  }
 `;
 
 export const Description = styled.p``;
@@ -62,4 +87,8 @@ export const VideoContainer = styled.div`
   height: 50vh;
   width: 70%;
   background-color: lightyellow;
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
 `;
