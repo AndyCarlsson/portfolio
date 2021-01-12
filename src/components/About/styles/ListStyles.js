@@ -10,6 +10,11 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   width: 40%;
+
+  @media (max-width: 480px) {
+    width: 90%;
+    font-size: 1.5rem;
+  }
 `;
 
 export const ItemContainer = styled.div`
@@ -20,13 +25,25 @@ export const ItemContainer = styled.div`
   padding: 1rem;
   border-radius: 10px;
   background-color: #dbd9d3;
+
+  @media (max-width: 480px) {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 90%;
+  }
 `;
 
 export const ItemTitle = styled.h2`
   color: #e85a4f;
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 `;
 
-export const Year = styled.h2``;
+export const Year = styled.h2`
+  font-size: 1.2rem;
+`;
 
 export const Month = styled.p`
   font-weight: 700;

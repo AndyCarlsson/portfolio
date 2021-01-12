@@ -11,12 +11,6 @@ export const Container = styled.div`
   align-items: center;
 `;
 
-export const GeneralText = styled.p`
-  height: 20rem;
-  display: flex;
-  align-items: center;
-`;
-
 export const ListContainer = styled.div`
   width: 100%;
   min-height: 70vh;

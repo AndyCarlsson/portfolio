@@ -8,6 +8,11 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
+  @media (max-width: 480px) {
+    justify-content: flex-start;
+    margin-top: 5rem;
+  }
 `;
 
 export const ContainerInner = styled.div`
@@ -18,10 +23,17 @@ export const ContainerInner = styled.div`
   width: 30%;
   border-radius: 10px;
   background-color: #dbd9d3;
+
+  @media (max-width: 480px) {
+    gap: 1rem;
+    width: 90%;
+  }
 `;
 
-export const Image = styled.img`
-  color: black;
-`;
+export const Image = styled.img``;
 
-export const Details = styled.h2``;
+export const Details = styled.h2`
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
+`;

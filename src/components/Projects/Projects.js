@@ -3,7 +3,6 @@ import ProjectData from './data/ProjectData.json';
 
 import {
   Container,
-  GeneralText,
   ListContainer,
   ProjectContainer,
   TitleSektion,

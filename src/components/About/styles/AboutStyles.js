@@ -6,7 +6,11 @@ export const Container = styled.div`
   min-height: 93vh;
   width: 100%;
   gap: 10rem;
-  margin-top: 10rem;
+
+  @media (max-width: 480px) {
+    margin-top: 5rem;
+    gap: 2rem;
+  }
 `;
 
 export const InnerContainer = styled.div`
@@ -16,8 +20,16 @@ export const InnerContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  height: 80%;
+  width: 80%;
+  border-radius: 10px;
+`;
 
 export const Text = styled.p``;
