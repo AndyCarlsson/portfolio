@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   min-height: 93vh;
   width: 100%;
+  margin-top: 6rem;
   gap: 10rem;
 
   @media (max-width: 480px) {
@@ -27,9 +28,14 @@ export const InnerContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 80%;
-  width: 80%;
+  height: 35%;
+  width: 35%;
   border-radius: 10px;
+
+  @media (max-width: 480px) {
+    height: 90%;
+    width: 90%;
+  }
 `;
 
 export const Text = styled.p``;

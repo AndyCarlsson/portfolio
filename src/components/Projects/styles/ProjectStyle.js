@@ -25,24 +25,32 @@ export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: ${({ direction }) => direction};
   align-items: center;
-  gap: 2rem;
-  height: 100%;
+  justify-content: center;
+  height: 40vh;
   width: 60%;
+  gap: 2rem;
   border-radius: 5px;
 
   @media (max-width: 480px) {
+    height: 100%;
     width: 100%;
     flex-direction: column-reverse;
   }
 `;
 
-export const TitleSektion = styled.div``;
+export const TitleSektion = styled.div`
+  height: 100%;
+
+  @media (max-width: 480px) {
+    margin-top: 10px;
+  }
+`;
 
 export const Section = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
+  min-height: 100%;
   width: 50%;
 
   @media (max-width: 480px) {

@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 //Here goes all styled components for Nav menu
 export const Container = styled.div`
@@ -12,6 +12,10 @@ export const Container = styled.div`
   padding: 0px 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const Logo = styled.h2``;
@@ -52,7 +56,7 @@ export const StyledNavLink = styled(NavLink).attrs({ activeClassName })`
     background-color: #e85a4f;
     visibility: hidden;
     transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
   }
 
   :hover::before {
@@ -77,10 +81,33 @@ export const Button = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
-
   transition: all 0.3s;
 
   :hover {
     color: #e85a4f;
   }
+`;
+
+export const ContainerSmallScreen = styled.div`
+  font-size: 2rem;
+  color: #e85a4f;
+  height: 7vh;
+  width: 95%;
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (max-width: 480px) {
+    display: flex;
+  }
+`;
+
+export const MenuContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 75%;
+  background: rgba(219, 217, 211, 0.95);
+  box-shadow: 1px 0 10px 2px rgba(0, 0, 0, 0.2);
 `;

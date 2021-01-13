@@ -1,21 +1,12 @@
 import React from 'react';
-import NavigationData from './data/NavigationData.json';
-import { Container, Logo, ItemUl, ItemLi, Button, StyledNavLink } from './styles/NavigationStyles';
+import Navbar from './Navbar';
+import NavbarSmall from './NavbarSmall';
 
 export default function Navigation() {
   return (
-    <Container>
-      <StyledNavLink exact to='/'>
-        <Logo>AC</Logo>
-      </StyledNavLink>
-      <ItemUl>
-        {NavigationData.map((item) => (
-          <ItemLi key={item.id}>
-            <StyledNavLink to={item.url}>{item.page}</StyledNavLink>
-          </ItemLi>
-        ))}
-      </ItemUl>
-      <Button>Resume</Button>
-    </Container>
+    <>
+      <Navbar />
+      <NavbarSmall />
+    </>
   );
 }
