@@ -121,7 +121,6 @@ export const SmallNavUl = styled.ul`
   gap: 2rem;
   list-style: none;
   height: 100%;
-  background-color: lightcoral;
 `;
 
 export const SmallNavLi = styled.li`
@@ -137,3 +136,5 @@ export const MenuMask = styled.div`
   width: 100%;
   background: transparent;
 `;
+
+export const SmallStyledNavLink = styled(NavLink).attrs({ activeClassName })``;

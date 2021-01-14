@@ -5,6 +5,7 @@ import {
   MenuMask,
   SmallNavUl,
   SmallNavLi,
+  SmallStyledNavLink,
 } from './styles/NavigationStyles';
 import NavigationData from './data/NavigationData.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,8 +25,12 @@ export default function NavbarSmall() {
 
   if (showMenu) {
     icon = <FontAwesomeIcon icon={faTimes} onClick={() => setShowMenu(!showMenu)} />;
+    document.documentElement.style.overflow = 'hidden';
+    document.body.scroll = 'no';
   } else {
     icon = <FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)} />;
+    document.documentElement.style.overflow = 'scroll';
+    document.body.scroll = 'yes';
   }
 
   return (
@@ -40,7 +45,9 @@ export default function NavbarSmall() {
               <MenuContainer>
                 <SmallNavUl>
                   {NavigationData.map((item) => (
-                    <SmallNavLi>{item.page}</SmallNavLi>
+                    <SmallNavLi onClick={() => setShowMenu(false)}>
+                      <SmallStyledNavLink to={item.url}>{item.page}</SmallStyledNavLink>
+                    </SmallNavLi>
                   ))}
                 </SmallNavUl>
               </MenuContainer>
