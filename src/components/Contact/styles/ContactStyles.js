@@ -6,16 +6,26 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
 
   @media (max-width: 480px) {
-    justify-content: flex-start;
-    margin-top: 5rem;
+    min-height: 100vh;
+    justify-content: center;
   }
 `;
 
 export const ContainerInner = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  @media (max-width: 480px) {
+    justify-content: center;
+  }
+`;
+
+export const ItemContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;

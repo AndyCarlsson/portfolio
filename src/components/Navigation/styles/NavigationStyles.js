@@ -90,10 +90,11 @@ export const Button = styled.button`
 
 export const ContainerSmallScreen = styled.div`
   position: absolute;
+  top: 0;
+  right: 5%;
   font-size: 2.5rem;
   color: #e85a4f;
   height: 7vh;
-  width: 95%;
   display: none;
   justify-content: flex-end;
   align-items: center;
@@ -104,13 +105,13 @@ export const ContainerSmallScreen = styled.div`
 `;
 
 export const MenuContainer = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   width: 75%;
-  background: rgba(219, 217, 211);
-  box-shadow: 1px 0 10px 2px rgba(0, 0, 0, 0.2);
+  background-color: #eae7dc;
+  box-shadow: 1px 0 10px 2px rgba(0, 0, 0, 0.4);
 `;
 
 export const SmallNavUl = styled.ul`
@@ -118,7 +119,8 @@ export const SmallNavUl = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 2rem;
+  margin-left: 20px;
+  gap: 2.5rem;
   list-style: none;
   height: 100%;
 `;
@@ -134,7 +136,11 @@ export const MenuMask = styled.div`
   left: 0;
   height: 100vh;
   width: 100%;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.2);
 `;
 
-export const SmallStyledNavLink = styled(NavLink).attrs({ activeClassName })``;
+export const SmallStyledNavLink = styled(NavLink).attrs({ activeClassName })`
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(20, 20, 20, 1);
+`;

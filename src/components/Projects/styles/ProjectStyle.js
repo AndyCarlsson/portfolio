@@ -9,6 +9,10 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 480px) {
+    min-height: 100vh;
+  }
 `;
 
 export const ListContainer = styled.div`
@@ -19,6 +23,10 @@ export const ListContainer = styled.div`
   align-items: center;
   background-color: ${({ bgColor }) => bgColor};
   padding: 20px;
+
+  @media (max-width: 480px) {
+    margin-top: 7vh;
+  }
 `;
 
 export const ProjectContainer = styled.div`

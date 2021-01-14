@@ -1,13 +1,14 @@
 import styled from 'styled-components/macro';
 
 export const Container = styled.div`
-  min-height: 93vh;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 93vh;
+  width: 100%;
 
   @media (max-width: 480px) {
+    min-height: 100vh;
     flex-direction: column;
     align-items: flex-start;
     width: 90%;

@@ -1,16 +1,27 @@
 import styled from 'styled-components/macro';
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
   min-height: 93vh;
   width: 100%;
-  margin-top: 6rem;
   gap: 10rem;
 
   @media (max-width: 480px) {
-    margin-top: 5rem;
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+`;
+
+export const TestContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  @media (max-width: 480px) {
+    margin-top: 12vh;
+    flex-direction: column;
   }
 `;
 

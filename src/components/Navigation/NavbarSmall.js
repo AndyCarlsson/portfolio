@@ -21,6 +21,12 @@ export default function NavbarSmall() {
     leave: { opacity: 1, transform: 'translateX(-100%)' },
   });
 
+  const sideMenuMaskTransition = useTransition(showMenu, null, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+  });
+
   let icon;
 
   if (showMenu) {
@@ -36,14 +42,23 @@ export default function NavbarSmall() {
   return (
     <>
       <ContainerSmallScreen>{icon}</ContainerSmallScreen>
-
+      {sideMenuMaskTransition.map(
+        ({ item, key, props }) =>
+          item && (
+            <animated.div key={key} style={props}>
+              <MenuMask onClick={() => setShowMenu(false)} />
+            </animated.div>
+          )
+      )}
       {sideMenuTransition.map(
         ({ item, key, props }) =>
           item && (
             <animated.div key={key} style={props}>
-              <MenuMask onClick={() => setShowMenu(false)}></MenuMask>
               <MenuContainer>
                 <SmallNavUl>
+                  <SmallNavLi onClick={() => setShowMenu(false)}>
+                    <SmallStyledNavLink to='/'>Home</SmallStyledNavLink>
+                  </SmallNavLi>
                   {NavigationData.map((item) => (
                     <SmallNavLi onClick={() => setShowMenu(false)}>
                       <SmallStyledNavLink to={item.url}>{item.page}</SmallStyledNavLink>
