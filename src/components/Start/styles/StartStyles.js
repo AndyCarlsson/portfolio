@@ -11,7 +11,7 @@ export const Container = styled.div`
     min-height: 100vh;
     flex-direction: column;
     align-items: flex-start;
-    width: 90%;
+    width: 100%;
   }
 `;
 
@@ -49,7 +49,7 @@ export const Description = styled.p`
 
   @media (max-width: 480px) {
     margin-top: 0.5rem;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     width: 100%;
   }
 `;

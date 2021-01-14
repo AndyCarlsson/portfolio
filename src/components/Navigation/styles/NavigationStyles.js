@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 //Here goes all styled components for Nav menu
 export const Container = styled.div`
   height: 7vh;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -90,14 +90,12 @@ export const Button = styled.button`
 
 export const ContainerSmallScreen = styled.div`
   position: absolute;
-  top: 0;
-  right: 5%;
+  display: none;
+  top: 20px;
+  right: 20px;
   font-size: 2.5rem;
   color: #e85a4f;
-  height: 7vh;
-  display: none;
-  justify-content: flex-end;
-  align-items: center;
+  transition: all 1s;
 
   @media (max-width: 480px) {
     display: flex;

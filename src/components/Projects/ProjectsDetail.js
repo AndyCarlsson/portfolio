@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   Container,
+  ContainerInner,
   TitleContainer,
   Title,
   TechStackItem,
@@ -34,22 +35,24 @@ export default function ProjectDetail(props) {
 
   return (
     <Container>
-      <TitleContainer>
-        <Title>{project.title}</Title>
-        <StackContainer>{stackListDiv}</StackContainer>
-      </TitleContainer>
-      <ImageContainer>
-        <ImageContainerInner align='center'>
-          <Image src={project.imgURL} />
-        </ImageContainerInner>
-        <ImageContainerInner align='flex-start'>
-          <Image src={project.imgURL} />
-        </ImageContainerInner>
-      </ImageContainer>
-      <DescriptionContainer>
-        <Description>Description</Description>
-      </DescriptionContainer>
-      <VideoContainer></VideoContainer>
+      <ContainerInner>
+        <TitleContainer>
+          <Title>{project.title}</Title>
+          <StackContainer>{stackListDiv}</StackContainer>
+        </TitleContainer>
+        <ImageContainer>
+          <ImageContainerInner align='center'>
+            <Image src={project.imgURL} />
+          </ImageContainerInner>
+          <ImageContainerInner align='flex-start'>
+            <Image src={project.imgURL} />
+          </ImageContainerInner>
+        </ImageContainer>
+        <DescriptionContainer>
+          <Description>Description</Description>
+        </DescriptionContainer>
+        <VideoContainer></VideoContainer>
+      </ContainerInner>
     </Container>
   );
 }
