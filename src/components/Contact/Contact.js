@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactData from './data/ContactData.json';
+
 import { Container, ContainerInner, Image, Details } from './styles/ContactStyles';
 
 function Contact() {

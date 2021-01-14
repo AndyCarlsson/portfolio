@@ -89,7 +89,8 @@ export const Button = styled.button`
 `;
 
 export const ContainerSmallScreen = styled.div`
-  font-size: 2rem;
+  position: absolute;
+  font-size: 2.5rem;
   color: #e85a4f;
   height: 7vh;
   width: 95%;
@@ -106,8 +107,33 @@ export const MenuContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 75%;
-  background: rgba(219, 217, 211, 0.95);
+  background: rgba(219, 217, 211);
   box-shadow: 1px 0 10px 2px rgba(0, 0, 0, 0.2);
+`;
+
+export const SmallNavUl = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  list-style: none;
+  height: 100%;
+  background-color: lightcoral;
+`;
+
+export const SmallNavLi = styled.li`
+  font-size: 3rem;
+  text-decoration: none;
+`;
+
+export const MenuMask = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: transparent;
 `;

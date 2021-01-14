@@ -1,23 +1,52 @@
 import React, { useState } from 'react';
-import { ContainerSmallScreen, MenuContainer } from './styles/NavigationStyles';
+import {
+  ContainerSmallScreen,
+  MenuContainer,
+  MenuMask,
+  SmallNavUl,
+  SmallNavLi,
+} from './styles/NavigationStyles';
+import NavigationData from './data/NavigationData.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { useTransition, animated } from 'react-spring';
 
 export default function NavbarSmall() {
   const [showMenu, setShowMenu] = useState(false);
 
-  let menu;
+  const sideMenuTransition = useTransition(showMenu, null, {
+    from: { opacity: 1, transform: 'translateX(-100%)' },
+    enter: { opacity: 1, transform: 'translateX(0%)' },
+    leave: { opacity: 1, transform: 'translateX(-100%)' },
+  });
+
+  let icon;
 
   if (showMenu) {
-    menu = <MenuContainer>The menu here!</MenuContainer>;
+    icon = <FontAwesomeIcon icon={faTimes} onClick={() => setShowMenu(!showMenu)} />;
+  } else {
+    icon = <FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)} />;
   }
 
   return (
     <>
-      <ContainerSmallScreen>
-        <FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)} />
-      </ContainerSmallScreen>
-      {menu}
+      <ContainerSmallScreen>{icon}</ContainerSmallScreen>
+
+      {sideMenuTransition.map(
+        ({ item, key, props }) =>
+          item && (
+            <animated.div key={key} style={props}>
+              <MenuMask onClick={() => setShowMenu(false)}></MenuMask>
+              <MenuContainer>
+                <SmallNavUl>
+                  {NavigationData.map((item) => (
+                    <SmallNavLi>{item.page}</SmallNavLi>
+                  ))}
+                </SmallNavUl>
+              </MenuContainer>
+            </animated.div>
+          )
+      )}
     </>
   );
 }
