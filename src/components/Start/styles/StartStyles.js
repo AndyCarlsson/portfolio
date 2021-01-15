@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import { animated } from 'react-spring';
 
 export const Container = styled.div`
   display: flex;
@@ -29,7 +30,7 @@ export const TextContainer = styled.div`
   }
 `;
 
-export const Title = styled.h1`
+export const Title = styled(animated.h1)`
   font-weight: bold;
   font-size: 5rem;
   color: #e85a4f;
@@ -43,7 +44,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Description = styled.p`
+export const Description = styled(animated.p)`
   font-size: 2rem;
   margin-top: 3px;
 
