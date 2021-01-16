@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import { animated } from 'react-spring';
 
 export const Container = styled.div`
   max-width: 100%;
@@ -25,7 +26,7 @@ export const ContainerInner = styled.div`
   }
 `;
 
-export const ItemContainer = styled.div`
+export const ItemContainer = styled(animated.div)`
   display: flex;
   align-items: center;
   gap: 2rem;

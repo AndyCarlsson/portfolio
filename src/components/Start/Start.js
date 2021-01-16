@@ -1,67 +1,28 @@
 import React, { useRef } from 'react';
 import { Container, TextContainer, Title, Description, Span } from './styles/StartStyles';
-import { useSpring, animated, useChain } from 'react-spring';
+import { useSpring, useChain } from 'react-spring';
 
 function Start() {
   const descRef1 = useRef();
-  console.log(descRef1);
-  // const descStyle1 = useAnimation(descRef1);
+  const descRef2 = useRef();
+  const descRef3 = useRef();
+  const descRef4 = useRef();
 
-  const titleDesc = useSpring({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-    delay: 2000,
-  });
+  const titleRef = useRef();
 
-  const descStyle1 = useSpring({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-    delay: 500,
-  });
+  const descStyle1 = useAnimation(descRef1);
+  const descStyle2 = useAnimation(descRef2);
+  const descStyle3 = useAnimation(descRef3);
+  const descStyle4 = useAnimation(descRef4);
 
-  const descStyle2 = useSpring({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-    delay: 800,
-  });
+  const titleStyle = useAnimation(titleRef);
 
-  const descStyle3 = useSpring({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-    delay: 1100,
-  });
-
-  const descStyle4 = useSpring({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-    delay: 1400,
-  });
-  // useChain({ descRef1, descRef2, descRef3, descRef4 });
+  useChain([descRef1, descRef2, descRef3, descRef4, titleRef]);
 
   return (
     <Container>
       <TextContainer>
-        <Title style={titleDesc}>Andreas Carlsson.</Title>
+        <Title style={titleStyle}>Andreas Carlsson.</Title>
         <Description style={descStyle1}>Aspiring front end developer.</Description>
         <Description style={descStyle2}>Gothenburg, Sweden.</Description>
         <Description style={descStyle3}>
@@ -73,17 +34,24 @@ function Start() {
   );
 }
 
-// const useAnimation = (ref) => {
-//   const spring = useSpring({
-//     from: {
-//       opacity: 0,
-//     },
-//     to: {
-//       opacity: 1,
-//     },
-//     ref: ref,
-//   });
-//   return spring;
-// };
+const useAnimation = (ref) => {
+  const spring = useSpring({
+    from: {
+      opacity: 0,
+      position: 'relative',
+      left: -10,
+      top: 0,
+    },
+    to: {
+      left: 0,
+      opacity: 1,
+    },
+    ref: ref,
+    config: {
+      duration: 600,
+    },
+  });
+  return spring;
+};
 
 export default Start;
