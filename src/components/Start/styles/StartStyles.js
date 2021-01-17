@@ -19,8 +19,7 @@ export const Container = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 60%;
+  width: 70%;
   min-height: 100%;
   margin-bottom: 10vh;
 

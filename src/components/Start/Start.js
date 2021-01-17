@@ -1,5 +1,11 @@
 import React, { useRef } from 'react';
-import { Container, TextContainer, Title, Description, Span } from './styles/StartStyles';
+import {
+  Container,
+  TextContainer,
+  Title,
+  Description,
+  Span,
+} from './styles/StartStyles';
 import { useSpring, useChain } from 'react-spring';
 
 function Start() {
@@ -15,7 +21,17 @@ function Start() {
   const descStyle3 = useAnimation(descRef3);
   const descStyle4 = useAnimation(descRef4);
 
-  const titleStyle = useAnimation(titleRef);
+  const titleStyle = useSpring({
+    from: {
+      opacity: 0,
+      color: 'black',
+    },
+    to: {
+      opacity: 1,
+      color: '#e85a4f',
+    },
+    ref: titleRef,
+  });
 
   useChain([descRef1, descRef2, descRef3, descRef4, titleRef]);
 
@@ -23,7 +39,9 @@ function Start() {
     <Container>
       <TextContainer>
         <Title style={titleStyle}>Andreas Carlsson.</Title>
-        <Description style={descStyle1}>Aspiring front end developer.</Description>
+        <Description style={descStyle1}>
+          Aspiring front end developer.
+        </Description>
         <Description style={descStyle2}>Gothenburg, Sweden.</Description>
         <Description style={descStyle3}>
           Minigolf<Span> [</Span>semi<Span>] </Span>pro.
@@ -37,18 +55,16 @@ function Start() {
 const useAnimation = (ref) => {
   const spring = useSpring({
     from: {
+      marginLeft: -50,
       opacity: 0,
-      position: 'relative',
-      left: -10,
-      top: 0,
     },
     to: {
-      left: 0,
+      marginLeft: 0,
       opacity: 1,
     },
     ref: ref,
     config: {
-      duration: 600,
+      duration: 500,
     },
   });
   return spring;

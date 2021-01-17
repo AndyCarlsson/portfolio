@@ -1,6 +1,12 @@
 import React, { useRef } from 'react';
 import ContactData from './data/ContactData.json';
-import { Container, ContainerInner, ItemContainer, Image, Details } from './styles/ContactStyles';
+import {
+  Container,
+  ContainerInner,
+  ItemContainer,
+  Image,
+  Details,
+} from './styles/ContactStyles';
 import { useChain, useSpring, useTrail } from 'react-spring';
 
 function Contact() {
