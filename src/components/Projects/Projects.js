@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectData from './data/ProjectData.json';
-import { useChain, useSpring, useTrail } from 'react-spring';
+import { useSpring } from 'react-spring';
 
 import {
   Container,
@@ -21,9 +21,11 @@ import {
 export default function Projects() {
   const imgSpring = useSpring({
     from: {
+      opacity: 0,
       marginBottom: 50,
     },
     to: {
+      opacity: 1,
       marginBottom: 0,
     },
   });
@@ -53,11 +55,7 @@ export default function Projects() {
                 <Description>{item.shortDescription}</Description>
               </TitleSektion>
               <LinkContainer>
-                <ExternalLink
-                  href={item.githubLink}
-                  rel='noreferrer'
-                  target='_blank'
-                >
+                <ExternalLink href={item.githubLink} rel='noreferrer' target='_blank'>
                   Github
                 </ExternalLink>
                 <StyledLink
@@ -66,8 +64,7 @@ export default function Projects() {
                     state: {
                       object: item,
                     },
-                  }}
-                >
+                  }}>
                   More info
                 </StyledLink>
               </LinkContainer>

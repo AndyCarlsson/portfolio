@@ -12,14 +12,20 @@ import {
   InfoContainer,
 } from './styles/ListStyles';
 import EducationData from './data/EducationData.json';
+import { useSpring } from 'react-spring';
 
 function EducationList() {
+  const containerSpring = useSpring({
+    from: { marginTop: 40 },
+    to: { marginTop: 0 },
+  });
+
   return (
     <Container>
       <Title>Education</Title>
       {EducationData.map((item) => {
         return (
-          <ItemContainer key={item.id}>
+          <ItemContainer key={item.id} style={containerSpring}>
             <DurationContainer>
               <Year>{item.startYear}</Year>
               <Span>-</Span>

@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import { animated } from 'react-spring';
 
 export const Container = styled.div`
   min-height: 93vh;
@@ -11,7 +12,8 @@ export const Container = styled.div`
   }
 `;
 
-export const TestContainer = styled.div`
+export const InnerContainer = styled.div`
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -25,7 +27,7 @@ export const TestContainer = styled.div`
   }
 `;
 
-export const InnerContainer = styled.div`
+export const Section = styled.div`
   display: flex;
   flex-direction: ${({ direction }) => direction};
   gap: ${({ gap }) => gap};
@@ -38,7 +40,7 @@ export const InnerContainer = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled(animated.img)`
   height: 35%;
   width: 35%;
   border-radius: 10px;
@@ -49,4 +51,4 @@ export const Image = styled.img`
   }
 `;
 
-export const Text = styled.p``;
+export const Text = styled(animated.p)``;

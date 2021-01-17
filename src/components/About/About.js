@@ -1,21 +1,40 @@
 import React from 'react';
-import { Container, InnerContainer, Image, Text, TestContainer } from './styles/AboutStyles';
 import EducationList from './EducationList';
 import WorkList from './WorkList';
+import { Container, InnerContainer, Image, Text, Section } from './styles/AboutStyles';
+import { useSpring } from 'react-spring';
 
 function About() {
+  const imgSpring = useSpring({
+    from: {
+      marginRight: 20,
+    },
+    to: {
+      marginRight: 0,
+    },
+  });
+
+  const textSpring = useSpring({
+    from: {
+      marginLeft: 20,
+    },
+    to: {
+      marginLeft: 0,
+    },
+  });
+
   return (
     <Container>
-      <TestContainer>
-        <InnerContainer direction='row' gap='5rem'>
-          <Image src='/stockphotoTest.jpg' />
-          <Text>Text om mig här</Text>
-        </InnerContainer>
-        <InnerContainer direction='column' gap='3rem'>
+      <InnerContainer>
+        <Section direction='row' gap='5rem'>
+          <Image src='/stockphotoTest.jpg' style={imgSpring} />
+          <Text style={textSpring}>Text om mig här</Text>
+        </Section>
+        <Section direction='column' gap='3rem'>
           <EducationList />
           <WorkList />
-        </InnerContainer>
-      </TestContainer>
+        </Section>
+      </InnerContainer>
     </Container>
   );
 }

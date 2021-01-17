@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import { animated } from 'react-spring';
 
 export const Container = styled.div`
   display: flex;
@@ -17,7 +18,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const ItemContainer = styled.div`
+export const ItemContainer = styled(animated.div)`
   width: 40%;
   display: flex;
   flex-direction: row;
