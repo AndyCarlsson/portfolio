@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectData from './data/ProjectData.json';
+import { useChain, useSpring, useTrail } from 'react-spring';
 
 import {
   Container,
@@ -18,12 +19,30 @@ import {
 } from './styles/ProjectStyle';
 
 export default function Projects() {
+  const imgSpring = useSpring({
+    from: {
+      marginBottom: 50,
+    },
+    to: {
+      marginBottom: 0,
+    },
+  });
+
+  const textSpring = useSpring({
+    from: {
+      marginTop: 50,
+    },
+    to: {
+      marginTop: 0,
+    },
+  });
+
   return (
     <Container>
       {ProjectData.map((item) => (
         <ListContainer item={item} key={item.id} bgColor={item.bgColor}>
           <ProjectContainer direction={item.direction}>
-            <Section>
+            <Section style={textSpring}>
               <TitleSektion>
                 <Title>{item.title}</Title>
                 <TechStackContainer>
@@ -34,7 +53,11 @@ export default function Projects() {
                 <Description>{item.shortDescription}</Description>
               </TitleSektion>
               <LinkContainer>
-                <ExternalLink href={item.githubLink} rel='noreferrer' target='_blank'>
+                <ExternalLink
+                  href={item.githubLink}
+                  rel='noreferrer'
+                  target='_blank'
+                >
                   Github
                 </ExternalLink>
                 <StyledLink
@@ -43,12 +66,13 @@ export default function Projects() {
                     state: {
                       object: item,
                     },
-                  }}>
+                  }}
+                >
                   More info
                 </StyledLink>
               </LinkContainer>
             </Section>
-            <Section>
+            <Section style={imgSpring}>
               <Image src={item.imgURL} alt={item.Alt} />
             </Section>
           </ProjectContainer>

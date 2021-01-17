@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
-
 import { Link } from 'react-router-dom';
+import { animated } from 'react-spring';
 
 export const Container = styled.div`
   width: 100%;
@@ -15,9 +15,9 @@ export const Container = styled.div`
   }
 `;
 
-export const ListContainer = styled.div`
+export const ListContainer = styled(animated.div)`
   width: 100%;
-  min-height: 70vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +54,7 @@ export const TitleSektion = styled.div`
   }
 `;
 
-export const Section = styled.div`
+export const Section = styled(animated.div)`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -110,7 +110,7 @@ export const TechStackItem = styled.p`
   color: #e85a4f;
 `;
 
-export const Image = styled.img`
+export const Image = styled(animated.img)`
   height: 100%;
   width: 100%;
   border-radius: 10px;
