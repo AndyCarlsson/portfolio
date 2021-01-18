@@ -30,7 +30,7 @@ function About() {
           <Image src='/stockphotoTest.jpg' style={imgSpring} />
           <Text style={textSpring}>Text om mig här</Text>
         </Section>
-        <Section direction='column' gap='3rem'>
+        <Section direction='column'>
           <EducationList />
           <WorkList />
         </Section>

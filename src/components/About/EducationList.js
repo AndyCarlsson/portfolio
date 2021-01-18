@@ -3,8 +3,12 @@ import {
   Year,
   Month,
   Container,
+  ListWrapper,
   Title,
   ItemContainer,
+  ItemInfoContainer,
+  CourseList,
+  CourseLi,
   ItemTitle,
   Text,
   Span,
@@ -21,29 +25,40 @@ function EducationList() {
   });
 
   return (
-    <Container>
-      <Title>Education</Title>
-      {EducationData.map((item) => {
-        return (
-          <ItemContainer key={item.id} style={containerSpring}>
-            <DurationContainer>
-              <Year>{item.startYear}</Year>
-              <Span>-</Span>
-              <Year>{item.endYear}</Year>
-              <Month>{item.startMonth}</Month>
-              <Span></Span>
-              <Month>{item.endMonth}</Month>
-            </DurationContainer>
-            <InfoContainer>
-              <ItemTitle>{item.title}</ItemTitle>
-              <Text>{item.degree}</Text>
-              <Text>{item.school}</Text>
-              <Text>{item.description}</Text>
-            </InfoContainer>
-          </ItemContainer>
-        );
-      })}
-    </Container>
+    <ListWrapper bgColor='#dbd9d3'>
+      <Container>
+        <Title>Education</Title>
+        {EducationData.map((item) => {
+          console.log(item.courses);
+          return (
+            <ItemContainer key={item.id} style={containerSpring}>
+              <DurationContainer>
+                <Year>{item.startYear}</Year>
+                <Span>-</Span>
+                <Year>{item.endYear}</Year>
+                <Month>{item.startMonth}</Month>
+                <Span></Span>
+                <Month>{item.endMonth}</Month>
+              </DurationContainer>
+              <InfoContainer>
+                <ItemTitle>{item.title}</ItemTitle>
+                <ItemInfoContainer>
+                  <Text>{item.degree}</Text>
+                  <span>|</span>
+                  <Text>{item.school}</Text>
+                </ItemInfoContainer>
+                <Text>{item.description}</Text>
+                <CourseList>
+                  {item.courses.map((course) => {
+                    return <CourseLi key={item.id}>{course}</CourseLi>;
+                  })}
+                </CourseList>
+              </InfoContainer>
+            </ItemContainer>
+          );
+        })}
+      </Container>
+    </ListWrapper>
   );
 }
 

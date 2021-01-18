@@ -4,7 +4,15 @@
     "title": "System Developer .NET",
     "degree": "Higher Vocational Education",
     "school": "Newton Yrkeshögskola",
-    "description": "During my studies at Newton I gained knowledge about programming.",
+    "description": "This focused education took place in close collaboration with the industry and included 24 weeks of internship, divided into two periods.  Here is a selection of the courses that I took:",
+    "courses": [
+      "Object Oriented Programming 1 / 2",
+      "Web Development",
+      "Database Technologies",
+      "Agil Software Development",
+      "Testing",
+      "Entrepreneurship"
+    ],
     "startYear": "2019",
     "startMonth": "sep",
     "endYear": "2021",
@@ -15,7 +23,13 @@
     "title": "Digital Media",
     "degree": "Bachelors of Arts",
     "school": "University West",
-    "description": "During my studies at University West I gained knowledge about digital media.",
+    "description": "After three years of studies at University West I got my Bachelor of Arts in Informatics by completing courses like:",
+    "courses": [
+      "Digital Graphics",
+      "Web and Interaction Design",
+      "Design Theory",
+      "User-oriented Design Methodology"
+    ],
     "startYear": "2014",
     "startMonth": "sep",
     "endYear": "2017",

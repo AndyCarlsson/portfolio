@@ -13,7 +13,6 @@ export const Container = styled.div`
 `;
 
 export const InnerContainer = styled.div`
-  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -34,6 +33,7 @@ export const Section = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  min-height: 93vh;
 
   @media (max-width: 480px) {
     flex-direction: column;
