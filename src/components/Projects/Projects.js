@@ -65,7 +65,7 @@ export default function Projects() {
                       object: item,
                     },
                   }}>
-                  More info
+                  Details
                 </StyledLink>
               </LinkContainer>
             </Section>

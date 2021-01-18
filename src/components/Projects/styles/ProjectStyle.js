@@ -77,11 +77,13 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.p`
+  font-size: 1.3rem;
   margin-top: 1.3rem;
 `;
 
 export const LinkContainer = styled.div`
   display: flex;
+  align-items: center;
   gap: 1rem;
 
   @media (max-width: 480px) {
@@ -91,8 +93,21 @@ export const LinkContainer = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
+  text-align: center;
   text-decoration: none;
-  color: #141414;
+  background-color: #e85a4f;
+  /* color: #141414; */
+  color: white;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  transition: all 0.3s;
+
+  :hover {
+    background-color: transparent;
+    color: #e85a4f;
+    border: 1px solid #e85a4f;
+  }
 `;
 
 export const ExternalLink = styled.a`
