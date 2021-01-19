@@ -12,10 +12,6 @@ export const Container = styled.div`
   padding: 0px 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-
-  @media (max-width: 480px) {
-    display: none;
-  }
 `;
 
 export const Logo = styled.h2``;
@@ -90,16 +86,12 @@ export const Button = styled.button`
 
 export const ContainerSmallScreen = styled.div`
   position: absolute;
-  display: none;
+  display: flex;
   top: 20px;
   right: 20px;
   font-size: 2.5rem;
   color: #e85a4f;
   transition: all 1s;
-
-  @media (max-width: 480px) {
-    display: flex;
-  }
 `;
 
 export const MenuContainer = styled.div`
@@ -140,5 +132,10 @@ export const MenuMask = styled.div`
 export const SmallStyledNavLink = styled(NavLink).attrs({ activeClassName })`
   text-decoration: none;
   text-transform: uppercase;
-  color: rgba(20, 20, 20, 1);
+  color: rgba(20, 20, 20, 0.5);
+
+  &.${activeClassName} {
+    color: rgba(20, 20, 20, 1);
+    text-decoration: line-through #e85a4f 3px;
+  }
 `;

@@ -7,6 +7,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: lightblue;
 
   @media (max-width: 480px) {
     min-height: 100vh;

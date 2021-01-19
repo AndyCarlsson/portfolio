@@ -6,7 +6,6 @@ export default function Navigation() {
   return (
     <>
       <Navbar />
-      <NavbarSmall />
     </>
   );
 }

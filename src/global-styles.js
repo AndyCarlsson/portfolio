@@ -12,14 +12,15 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #141414;
   background-color: #EAE7DC;
+  overflow: hidden;
   font-size: 16px;
   min-height: 100vh;
   width: 100%;
 }
 
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0px; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
-} */
+}
 `;
