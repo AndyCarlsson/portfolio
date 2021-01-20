@@ -35,7 +35,7 @@ export const Section = styled.div`
   width: 100%;
   min-height: 93vh;
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -48,6 +48,11 @@ export const Image = styled(animated.img)`
   @media (max-width: 480px) {
     height: 90%;
     width: 90%;
+  }
+
+  @media (max-width: 768px) {
+    height: 60%;
+    width: 60%;
   }
 `;
 

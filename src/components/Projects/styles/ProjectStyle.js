@@ -10,7 +10,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     min-height: 100vh;
   }
 `;
@@ -40,6 +40,12 @@ export const ProjectContainer = styled.div`
   border-radius: 5px;
 
   @media (max-width: 480px) {
+    height: 100%;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  @media (max-width: 768px) {
     height: 100%;
     width: 100%;
     flex-direction: column-reverse;
@@ -86,7 +92,7 @@ export const LinkContainer = styled.div`
   align-items: center;
   gap: 1rem;
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     width: 100%;
     margin-top: 2rem;
   }

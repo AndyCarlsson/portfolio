@@ -1,11 +1,5 @@
 import React, { useRef } from 'react';
-import {
-  Container,
-  TextContainer,
-  Title,
-  Description,
-  Span,
-} from './styles/StartStyles';
+import { Container, TextContainer, Title, Description, Span } from './styles/StartStyles';
 import { useSpring, useChain } from 'react-spring';
 
 function Start() {
@@ -31,6 +25,7 @@ function Start() {
       color: '#e85a4f',
     },
     ref: titleRef,
+    duration: 500,
   });
 
   useChain([descRef1, descRef2, descRef3, descRef4, titleRef]);
@@ -39,9 +34,7 @@ function Start() {
     <Container>
       <TextContainer>
         <Title style={titleStyle}>Andreas Carlsson.</Title>
-        <Description style={descStyle1}>
-          Aspiring front end developer.
-        </Description>
+        <Description style={descStyle1}>Aspiring front end developer.</Description>
         <Description style={descStyle2}>Gothenburg, Sweden.</Description>
         <Description style={descStyle3}>
           Minigolf<Span> [</Span>semi<Span>] </Span>pro.

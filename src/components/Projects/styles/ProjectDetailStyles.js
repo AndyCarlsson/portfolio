@@ -15,6 +15,12 @@ export const Container = styled.div`
     margin-top: 0;
     gap: 2rem;
   }
+
+  @media (max-width: 768px) {
+    min-height: 100vh;
+    margin-top: 0;
+    gap: 2rem;
+  }
 `;
 
 export const ContainerInner = styled.div`
@@ -22,7 +28,13 @@ export const ContainerInner = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   @media (max-width: 480px) {
+    margin-top: 10vh;
+    gap: 2rem;
+  }
+
+  @media (max-width: 768px) {
     margin-top: 10vh;
     gap: 2rem;
   }

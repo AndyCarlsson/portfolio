@@ -1,14 +1,6 @@
 import styled from 'styled-components/macro';
 import { animated } from 'react-spring';
 
-// export const Container = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   gap: 1.3rem;
-//   align-items: center;
-//   width: 100%;
-// `;
-
 export const ListWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -33,6 +25,12 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
   }
+
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const Title = styled.h1`
@@ -46,6 +44,12 @@ export const Title = styled.h1`
   grid-row: 1 / span 2;
 
   @media (max-width: 480px) {
+    transform: rotate(0deg);
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
     transform: rotate(0deg);
     width: 90%;
     font-size: 1.5rem;

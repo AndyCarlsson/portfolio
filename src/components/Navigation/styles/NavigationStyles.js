@@ -1,7 +1,6 @@
 import styled from 'styled-components/macro';
 import { NavLink } from 'react-router-dom';
 
-//Here goes all styled components for Nav menu
 export const Container = styled.div`
   height: 7vh;
   max-width: 100%;

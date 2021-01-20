@@ -57,7 +57,9 @@ export default function NavbarSmall() {
               <MenuContainer>
                 <SmallNavUl>
                   <SmallNavLi onClick={() => setShowMenu(false)}>
-                    <SmallStyledNavLink to='/'>Home</SmallStyledNavLink>
+                    <SmallStyledNavLink exact to='/'>
+                      Home
+                    </SmallStyledNavLink>
                   </SmallNavLi>
                   {NavigationData.map((item) => (
                     <SmallNavLi onClick={() => setShowMenu(false)}>

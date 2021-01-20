@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import NavbarSmall from './NavbarSmall';
+import { animated, useSpring } from 'react-spring';
 
 export default function Navigation() {
   const [windowDimension, setWindowDimension] = useState(null);
@@ -18,19 +19,25 @@ export default function Navigation() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const isMobile = windowDimension <= 480;
+  const isHamMenu = windowDimension <= 768;
 
-  return (
-    <>
-      {isMobile ? (
-        <>
-          <NavbarSmall />
-        </>
-      ) : (
-        <>
-          <Navbar />
-        </>
-      )}
-    </>
-  );
+  let pathName = window.location.pathname;
+
+  // if ((pathName = '/')) {
+  //   let menu = (
+  //     <animated.div style={spring}>{isHamMenu ? <NavbarSmall /> : <Navbar />}</animated.div>
+  //   );
+  // }
+
+  const spring = useSpring({
+    from: {
+      opacity: 0,
+    },
+    to: {
+      opacity: 1,
+    },
+    delay: 3000,
+  });
+
+  return <animated.div style={spring}>{isHamMenu ? <NavbarSmall /> : <Navbar />}</animated.div>;
 }
