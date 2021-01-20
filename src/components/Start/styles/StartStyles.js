@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 93vh;
+  min-height: 90vh;
   width: 100%;
 
   @media (max-width: 480px) {
@@ -20,8 +20,7 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 70%;
-  min-height: 100%;
-  margin-bottom: 10vh;
+  margin-bottom: 5rem;
 
   @media (max-width: 480px) {
     width: 100%;

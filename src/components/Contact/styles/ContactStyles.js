@@ -3,11 +3,10 @@ import { animated } from 'react-spring';
 
 export const Container = styled.div`
   max-width: 100%;
-  min-height: 93vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: lightblue;
 
   @media (max-width: 480px) {
     min-height: 100vh;

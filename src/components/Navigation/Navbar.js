@@ -83,7 +83,9 @@ export default function Navbar() {
                   <MenuContainer>
                     <SmallNavUl>
                       <SmallNavLi onClick={() => setShowMenu(false)}>
-                        <SmallStyledNavLink to='/'>Home</SmallStyledNavLink>
+                        <SmallStyledNavLink exact to='/'>
+                          Home
+                        </SmallStyledNavLink>
                       </SmallNavLi>
                       {NavigationData.map((item) => (
                         <SmallNavLi key={item.id} onClick={() => setShowMenu(false)}>
@@ -97,22 +99,19 @@ export default function Navbar() {
           )}
         </>
       ) : (
-        (console.log('Is NOT mobile!'),
-        (
-          <Container>
-            <StyledNavLink exact to='/'>
-              <Logo>AC</Logo>
-            </StyledNavLink>
-            <ItemUl>
-              {NavigationData.map((item) => (
-                <ItemLi key={item.id}>
-                  <StyledNavLink to={item.url}>{item.page}</StyledNavLink>
-                </ItemLi>
-              ))}
-            </ItemUl>
-            <Button>Resume</Button>
-          </Container>
-        ))
+        <Container>
+          <StyledNavLink exact to='/'>
+            <Logo>AC</Logo>
+          </StyledNavLink>
+          <ItemUl>
+            {NavigationData.map((item) => (
+              <ItemLi key={item.id}>
+                <StyledNavLink to={item.url}>{item.page}</StyledNavLink>
+              </ItemLi>
+            ))}
+          </ItemUl>
+          <Button>Resume</Button>
+        </Container>
       )}
     </>
   );

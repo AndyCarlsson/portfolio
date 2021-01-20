@@ -9,6 +9,21 @@ import { animated } from 'react-spring';
 //   width: 100%;
 // `;
 
+export const ListWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 70vh;
+  background-color: ${({ bgColor }) => bgColor};
+
+  @media (max-width: 480px) {
+    //     width: 90%;
+    //     font-size: 1.5rem;
+  }
+`;
+
 export const Container = styled.div`
   display: grid;
   justify-content: center;
@@ -17,16 +32,12 @@ export const Container = styled.div`
   width: 70%;
   grid-row-gap: 1rem;
   grid-column-gap: 5rem;
-`;
 
-export const ListWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 70vh;
-  background-color: ${({ bgColor }) => bgColor};
+  @media (max-width: 480px) {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 // export const Title = styled.h1`
@@ -50,6 +61,7 @@ export const Title = styled.h1`
   grid-row: 1 / span 2;
 
   @media (max-width: 480px) {
+    transform: rotate(0deg);
     width: 90%;
     font-size: 1.5rem;
   }
@@ -78,8 +90,9 @@ export const ItemContainer = styled(animated.div)`
 
   @media (max-width: 480px) {
     align-items: flex-start;
+    gap: 1rem;
     flex-direction: column;
-    width: 90%;
+    /* width: 90%; */
   }
 `;
 
@@ -100,6 +113,15 @@ export const ItemInfoContainer = styled.div`
   font-weight: 700;
   gap: 0.5rem;
   margin-bottom: 7px;
+
+  @media (max-width: 480px) {
+    span {
+      display: none;
+    }
+
+    gap: 0;
+    flex-direction: column;
+  }
 `;
 
 export const CourseList = styled.ul`
@@ -145,5 +167,9 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   padding: 1rem;
   border-radius: 10px;
+
+  @media (max-width: 480px) {
+    padding: 0;
+  }
   /* background-color: #dbd9d3; */
 `;
