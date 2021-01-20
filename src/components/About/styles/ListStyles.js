@@ -17,11 +17,6 @@ export const ListWrapper = styled.div`
   width: 100%;
   min-height: 70vh;
   background-color: ${({ bgColor }) => bgColor};
-
-  @media (max-width: 480px) {
-    //     width: 90%;
-    //     font-size: 1.5rem;
-  }
 `;
 
 export const Container = styled.div`
@@ -40,16 +35,6 @@ export const Container = styled.div`
   }
 `;
 
-// export const Title = styled.h1`
-//   font-size: 1.5rem;
-//   width: 40%;
-
-//   @media (max-width: 480px) {
-//     width: 90%;
-//     font-size: 1.5rem;
-//   }
-// `;
-
 export const Title = styled.h1`
   font-size: 1.5rem;
   transform: rotate(-90deg);
@@ -67,20 +52,6 @@ export const Title = styled.h1`
   }
 `;
 
-// export const ItemContainer = styled(animated.div)`
-//   width: 40%;
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   gap: 1.5rem;
-
-//   @media (max-width: 480px) {
-//     align-items: flex-start;
-//     flex-direction: column;
-//     width: 90%;
-//   }
-// `;
-
 export const ItemContainer = styled(animated.div)`
   grid-column: 2;
   display: flex;
@@ -92,7 +63,6 @@ export const ItemContainer = styled(animated.div)`
     align-items: flex-start;
     gap: 1rem;
     flex-direction: column;
-    /* width: 90%; */
   }
 `;
 
@@ -130,9 +100,7 @@ export const CourseList = styled.ul`
   margin: 10px 1rem;
 `;
 
-export const CourseLi = styled.li`
-  /* display: inline-block; */
-`;
+export const CourseLi = styled.li``;
 
 export const Year = styled.h2`
   font-size: 1.2rem;
@@ -171,5 +139,4 @@ export const InfoContainer = styled.div`
   @media (max-width: 480px) {
     padding: 0;
   }
-  /* background-color: #dbd9d3; */
 `;
