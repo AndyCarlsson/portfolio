@@ -19,6 +19,10 @@ body {
   width: 100%;
 }
 
+p{
+  line-height: 1.4;
+}
+
 
 ::-webkit-scrollbar {
   width: 0px; /* Remove scrollbar space */

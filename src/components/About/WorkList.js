@@ -40,8 +40,8 @@ function WorkList() {
                 </ItemInfoContainer>
                 <Text>{item.description}</Text>
                 <CourseList>
-                  {item.techStack.map((course) => {
-                    return <CourseLi key={item.id}>{course}</CourseLi>;
+                  {item.techStack.map((tech) => {
+                    return <CourseLi key={tech.id}>{tech.title}</CourseLi>;
                   })}
                 </CourseList>
               </InfoContainer>

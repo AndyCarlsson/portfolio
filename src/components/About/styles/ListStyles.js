@@ -16,7 +16,8 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   grid-template-columns: 20% 50%;
-  width: 70%;
+  width: 100%;
+  min-height: 60vh;
   grid-row-gap: 1rem;
   grid-column-gap: 5rem;
 
@@ -101,6 +102,7 @@ export const ItemInfoContainer = styled.div`
 export const CourseList = styled.ul`
   display: flex;
   flex-direction: column;
+  gap: 0.3rem;
   margin: 10px 1rem;
 `;
 

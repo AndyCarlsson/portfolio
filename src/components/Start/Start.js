@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { Container, TextContainer, Title, Description, Span } from './styles/StartStyles';
 import { useSpring, useChain } from 'react-spring';
-import phone_xkcd_fav from '../../images/phone_xkcd_fav.webp';
 
 function Start() {
   const descRef1 = useRef();

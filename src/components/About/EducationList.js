@@ -29,7 +29,6 @@ function EducationList() {
       <Container>
         <Title>Education</Title>
         {EducationData.map((item) => {
-          console.log(item.courses);
           return (
             <ItemContainer key={item.id} style={containerSpring}>
               <DurationContainer>
@@ -50,7 +49,7 @@ function EducationList() {
                 <Text>{item.description}</Text>
                 <CourseList>
                   {item.courses.map((course) => {
-                    return <CourseLi key={item.id}>{course}</CourseLi>;
+                    return <CourseLi key={course.id}>{course.title}</CourseLi>;
                   })}
                 </CourseList>
               </InfoContainer>
