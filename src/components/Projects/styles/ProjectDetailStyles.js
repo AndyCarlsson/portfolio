@@ -63,10 +63,13 @@ export const TechStackItem = styled.p`
 export const Title = styled.h1``;
 
 export const ImageContainer = styled.div`
-  width: 70%;
-  height: 70vh;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  gap: 2rem;
 
   @media (max-width: 480px) {
     flex-direction: column;
@@ -79,7 +82,7 @@ export const ImageContainerInner = styled.div`
   justify-content: center;
   align-items: ${({ align }) => align};
   height: 100%;
-  width: 50%;
+  width: 30%;
 
   @media (max-width: 480px) {
     width: 100%;
@@ -87,9 +90,7 @@ export const ImageContainerInner = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 45vh;
-  width: 80%;
-  background-color: lightblue;
+  width: 60%;
 
   @media (max-width: 480px) {
     width: 90%;

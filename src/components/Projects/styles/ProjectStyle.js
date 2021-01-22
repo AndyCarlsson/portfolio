@@ -64,6 +64,7 @@ export const Section = styled(animated.div)`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   min-height: 100%;
   width: 50%;
 
@@ -88,6 +89,7 @@ export const Description = styled.p`
 `;
 
 export const LinkContainer = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -102,7 +104,6 @@ export const StyledLink = styled(Link)`
   text-align: center;
   text-decoration: none;
   background-color: #e85a4f;
-  /* color: #141414; */
   color: white;
   padding: 0.5rem 0.7rem;
   border: 1px solid transparent;
@@ -132,7 +133,6 @@ export const TechStackItem = styled.p`
 `;
 
 export const Image = styled(animated.img)`
-  height: 100%;
-  width: 100%;
+  width: 50%;
   border-radius: 10px;
 `;

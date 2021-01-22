@@ -1,5 +1,7 @@
 import React from 'react';
-import ProjectData from './data/ProjectData.json';
+// import ProjectData from './data/ProjectData.json';
+import ProjectData from './data/ProjectData.js';
+
 import { useSpring } from 'react-spring';
 
 import {
@@ -70,7 +72,7 @@ export default function Projects() {
               </LinkContainer>
             </Section>
             <Section style={imgSpring}>
-              <Image src={item.imgURL} alt={item.Alt} />
+              <Image src={item.imgURLPrimary} alt={item.Alt} />
             </Section>
           </ProjectContainer>
         </ListContainer>

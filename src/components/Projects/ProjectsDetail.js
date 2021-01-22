@@ -42,10 +42,10 @@ export default function ProjectDetail(props) {
         </TitleContainer>
         <ImageContainer>
           <ImageContainerInner align='center'>
-            <Image src={project.imgURL} />
+            <Image src={project.imgURLPrimary} />
           </ImageContainerInner>
           <ImageContainerInner align='flex-start'>
-            <Image src={project.imgURL} />
+            <Image src={project.imgURLSecondary} />
           </ImageContainerInner>
         </ImageContainer>
         <DescriptionContainer>
