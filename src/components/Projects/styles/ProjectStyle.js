@@ -132,7 +132,10 @@ export const TechStackItem = styled.p`
   color: #e85a4f;
 `;
 
+export const ImageContainer = styled.div`
+  height: 45vh;
+`;
+
 export const Image = styled(animated.img)`
-  width: 50%;
-  border-radius: 10px;
+  height: 100%;
 `;

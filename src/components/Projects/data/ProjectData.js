@@ -1,5 +1,6 @@
 import phone_xkcd_start from '../../../images/phone_xkcd_start.webp';
 import phone_xkcd_fav from '../../../images/phone_xkcd_fav.webp';
+import imac_sorting_algorithm from '../../../images/imac_sorting_algorithm.webp';
 
 const ProjectData = [
   {
@@ -8,7 +9,7 @@ const ProjectData = [
     shortDescription:
       'Web app created with Blazor that is visualising different sorting algorithms.',
     longDescription: 'Long Web App visualising different sorting algorithms',
-    imgURLPrimary: phone_xkcd_start,
+    imgURLPrimary: imac_sorting_algorithm,
     imgURLSecondary: phone_xkcd_fav,
     imgAlt: 'Algorith Visualization',
     stackList: ['Blazor', 'C#', 'html', 'css'],

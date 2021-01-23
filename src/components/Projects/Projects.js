@@ -17,6 +17,7 @@ import {
   ExternalLink,
   TechStackContainer,
   TechStackItem,
+  ImageContainer,
   Image,
 } from './styles/ProjectStyle';
 
@@ -72,7 +73,9 @@ export default function Projects() {
               </LinkContainer>
             </Section>
             <Section style={imgSpring}>
-              <Image src={item.imgURLPrimary} alt={item.Alt} />
+              <ImageContainer>
+                <Image src={item.imgURLPrimary} alt={item.Alt} />
+              </ImageContainer>
             </Section>
           </ProjectContainer>
         </ListContainer>
