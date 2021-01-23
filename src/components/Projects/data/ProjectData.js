@@ -1,6 +1,7 @@
 import phone_xkcd_start from '../../../images/phone_xkcd_start.webp';
 import phone_xkcd_fav from '../../../images/phone_xkcd_fav.webp';
 import imac_sorting_algorithm from '../../../images/imac_sorting_algorithm.webp';
+import imac_startpage from '../../../images/imac_startpage.webp';
 
 const ProjectData = [
   {
@@ -37,7 +38,8 @@ const ProjectData = [
     shortDescription:
       'This is a starpage for the web customized with my personally most visited websites and information at hand.',
     longDescription: 'Browser startpage',
-    imgURL: '/stockphotoTest.jpg',
+    imgURLPrimary: imac_startpage,
+    imgURLSecondary: '',
     imgAlt: 'Startpage',
     stackList: ['html', 'css', 'js'],
     githubLink: 'https://github.com/AndyCarlsson/startpage',
