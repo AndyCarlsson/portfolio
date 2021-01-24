@@ -4,7 +4,8 @@ import { NavLink } from 'react-router-dom';
 export const Container = styled.div`
   height: 7vh;
   max-width: 100%;
-  display: flex;
+  /* display: flex; */
+  display: ${({ display }) => display};
   flex-direction: row;
   justify-content: space-between;
   align-items: center;

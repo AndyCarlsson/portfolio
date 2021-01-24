@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation, { Start, Projects, ProjectDetail, About, Contact } from './components/index';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function App() {
   return (

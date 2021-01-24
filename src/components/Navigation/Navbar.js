@@ -1,11 +1,21 @@
 import React from 'react';
 import { Container, Logo, ItemUl, ItemLi, Button, StyledNavLink } from './styles/NavigationStyles';
 import NavigationData from './data/NavigationData.json';
+import { useLocation } from 'react-router-dom';
 
 export default function Navbar() {
+  const location = useLocation();
+  let displayValue;
+
+  if (location.pathname.includes('/work/')) {
+    displayValue = 'none';
+  }
+
+  console.log(location);
+
   return (
     <>
-      <Container>
+      <Container display={displayValue === 'none' ? 'none' : 'flex'}>
         <StyledNavLink exact to='/'>
           <Logo>AC</Logo>
         </StyledNavLink>
