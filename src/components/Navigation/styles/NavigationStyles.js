@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 export const Container = styled.div`
   height: 7vh;
   max-width: 100%;
-  /* display: flex; */
   display: ${({ display }) => display};
   flex-direction: row;
   justify-content: space-between;
@@ -36,7 +35,7 @@ export const StyledNavLink = styled(NavLink).attrs({ activeClassName })`
   font-weight: 700;
   color: rgba(20, 20, 20, 0.5);
   border-bottom: transparent solid 2px;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 
   :hover {
     color: rgba(20, 20, 20, 1);

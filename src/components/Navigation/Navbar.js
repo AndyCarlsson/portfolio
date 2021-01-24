@@ -9,13 +9,13 @@ export default function Navbar() {
 
   if (location.pathname.includes('/work/')) {
     displayValue = 'none';
+  } else {
+    displayValue = 'flex';
   }
-
-  console.log(location);
 
   return (
     <>
-      <Container display={displayValue === 'none' ? 'none' : 'flex'}>
+      <Container display={displayValue}>
         <StyledNavLink exact to='/'>
           <Logo>AC</Logo>
         </StyledNavLink>

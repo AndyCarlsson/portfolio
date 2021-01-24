@@ -74,7 +74,7 @@ export default function Projects() {
             </Section>
             <Section style={imgSpring}>
               <ImageContainer>
-                <Image src={item.imgURLPrimary} alt={item.Alt} />
+                <Image src={item.images[0]} alt={item.Alt} />
               </ImageContainer>
             </Section>
           </ProjectContainer>

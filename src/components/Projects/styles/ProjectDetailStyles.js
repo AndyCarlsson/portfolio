@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   min-height: 93vh;
@@ -23,11 +24,27 @@ export const Container = styled.div`
   }
 `;
 
+export const BackButton = styled(Link)`
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(20, 20, 20, 0.5);
+  transition: all 0.3s ease-in-out;
+
+  :hover {
+    color: rgba(20, 20, 20, 1);
+  }
+`;
+
 export const ContainerInner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
   @media (max-width: 480px) {
     margin-top: 10vh;
@@ -69,7 +86,7 @@ export const ImageContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 80vh;
-  gap: 2rem;
+  gap: 5rem;
 
   @media (max-width: 480px) {
     flex-direction: column;
@@ -81,8 +98,7 @@ export const ImageContainerInner = styled.div`
   display: flex;
   justify-content: center;
   align-items: ${({ align }) => align};
-  height: 100%;
-  width: 30%;
+  height: 60vh;
 
   @media (max-width: 480px) {
     width: 100%;
@@ -90,7 +106,7 @@ export const ImageContainerInner = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 60%;
+  height: 100%;
 
   @media (max-width: 480px) {
     width: 90%;

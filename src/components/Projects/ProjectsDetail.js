@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   Container,
+  BackButton,
   ContainerInner,
   TitleContainer,
   Title,
@@ -33,21 +34,27 @@ export default function ProjectDetail(props) {
     });
   }
 
+  let images;
+  if (project.images) {
+    images = project.images.map((image, index) => {
+      return (
+        <ImageContainerInner align='center' key={index}>
+          <Image src={image} />
+        </ImageContainerInner>
+      );
+    });
+    console.log(project.images);
+  }
+
   return (
     <Container>
+      <BackButton to='/work'>Back</BackButton>
       <ContainerInner>
         <TitleContainer>
           <Title>{project.title}</Title>
           <StackContainer>{stackListDiv}</StackContainer>
         </TitleContainer>
-        <ImageContainer>
-          <ImageContainerInner align='center'>
-            <Image src={project.imgURLPrimary} />
-          </ImageContainerInner>
-          <ImageContainerInner align='flex-start'>
-            <Image src={project.imgURLSecondary} />
-          </ImageContainerInner>
-        </ImageContainer>
+        <ImageContainer>{images}</ImageContainer>
         <DescriptionContainer>
           <Description>Description</Description>
         </DescriptionContainer>

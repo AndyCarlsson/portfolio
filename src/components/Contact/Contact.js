@@ -19,7 +19,7 @@ function Contact() {
     <Container>
       <ContainerInner>
         {containerTrail.map((props, index) => (
-          <ItemContainer key={ContactData[index]} style={props}>
+          <ItemContainer key={ContactData[index].id} style={props}>
             <Image src={ContactData[index].imgURL} alt={ContactData[index].imgAlt} />
             <Details>{ContactData[index].details}</Details>
           </ItemContainer>
