@@ -25,6 +25,9 @@ export const Container = styled.div`
 `;
 
 export const BackButton = styled(Link)`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   position: fixed;
   top: 10%;
   left: 5%;
@@ -32,7 +35,7 @@ export const BackButton = styled(Link)`
   text-transform: uppercase;
   font-weight: 700;
   color: rgba(20, 20, 20, 0.5);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   :hover {
     color: rgba(20, 20, 20, 1);

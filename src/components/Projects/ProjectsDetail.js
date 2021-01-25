@@ -15,6 +15,9 @@ import {
   StackContainer,
 } from './styles/ProjectDetailStyles';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+
 export default function ProjectDetail(props) {
   const [project, setProject] = useState({});
 
@@ -43,12 +46,14 @@ export default function ProjectDetail(props) {
         </ImageContainerInner>
       );
     });
-    console.log(project.images);
   }
 
   return (
     <Container>
-      <BackButton to='/work'>Back</BackButton>
+      <BackButton to='/work'>
+        <FontAwesomeIcon icon={faArrowLeft} />
+        <p>Back</p>
+      </BackButton>
       <ContainerInner>
         <TitleContainer>
           <Title>{project.title}</Title>
