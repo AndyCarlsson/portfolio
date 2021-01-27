@@ -8,8 +8,10 @@ import {
   SmallStyledNavLink,
 } from './styles/NavigationStyles';
 import NavigationData from './data/NavigationData.json';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+
 import { useTransition, animated } from 'react-spring';
 
 export default function NavbarSmall() {

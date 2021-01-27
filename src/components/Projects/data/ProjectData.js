@@ -1,7 +1,7 @@
-import phone_xkcd_start from '../../../images/phone_xkcd_start.webp';
-import phone_xkcd_fav from '../../../images/phone_xkcd_fav.webp';
-import imac_sorting_algorithm from '../../../images/imac_sorting_algorithm.webp';
-import imac_startpage from '../../../images/imac_startpage.webp';
+import phone_xkcd_start from '../../../assets/images/phone_xkcd_start.webp';
+import phone_xkcd_fav from '../../../assets/images/phone_xkcd_fav.webp';
+import imac_sorting_algorithm from '../../../assets/images/imac_sorting_algorithm.webp';
+import imac_startpage from '../../../assets/images/imac_startpage.webp';
 
 const ProjectData = [
   {
