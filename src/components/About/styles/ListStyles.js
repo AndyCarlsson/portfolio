@@ -21,13 +21,13 @@ export const Container = styled.div`
   grid-row-gap: 1rem;
   grid-column-gap: 5rem;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     padding: 3rem 0;
     display: flex;
     flex-direction: column;
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
     padding: 3rem 0;
     display: flex;
     flex-direction: column;
@@ -44,13 +44,13 @@ export const Title = styled.h1`
   justify-content: center;
   grid-row: 1 / span 2;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     transform: rotate(0deg);
     width: 90%;
     font-size: 1.5rem;
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
     transform: rotate(0deg);
     width: 90%;
     font-size: 1.5rem;
@@ -64,7 +64,7 @@ export const ItemContainer = styled(animated.div)`
   align-items: center;
   gap: 1.5rem;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     align-items: flex-start;
     gap: 1rem;
     flex-direction: column;
@@ -76,7 +76,7 @@ export const ItemTitle = styled.h2`
   margin-bottom: 7px;
   color: #e85a4f;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     font-size: 1.2rem;
   }
 `;
@@ -89,7 +89,7 @@ export const ItemInfoContainer = styled.div`
   gap: 0.5rem;
   margin-bottom: 7px;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     span {
       display: none;
     }
@@ -142,7 +142,7 @@ export const InfoContainer = styled.div`
   padding: 1rem;
   border-radius: 10px;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     padding: 0;
   }
 `;
