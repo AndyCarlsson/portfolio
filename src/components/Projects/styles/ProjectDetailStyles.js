@@ -129,11 +129,15 @@ export const DescriptionContainer = styled.div`
 export const Description = styled.p``;
 
 export const VideoContainer = styled.div`
-  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
   width: 70%;
-  background-color: lightyellow;
 
   @media (max-width: 480px) {
     width: 90%;
   }
 `;
+
+export const Video = styled.video``;

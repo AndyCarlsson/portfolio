@@ -12,6 +12,7 @@ import {
   DescriptionContainer,
   Description,
   VideoContainer,
+  Video,
   StackContainer,
 } from './styles/ProjectDetailStyles';
 
@@ -55,7 +56,7 @@ export default function ProjectDetail(props) {
     <Container>
       <BackButton to='/work'>
         <FontAwesomeIcon icon={faArrowLeft} />
-        <p>Back</p>
+        Back
       </BackButton>
       <ContainerInner>
         <TitleContainer>
@@ -67,9 +68,9 @@ export default function ProjectDetail(props) {
           <Description>Description</Description>
         </DescriptionContainer>
         <VideoContainer>
-          <video width='320' height='240' controls>
+          <Video width='1000' height='800' controls loop autoplay muted>
             <source src={video} type='video/mp4' />
-          </video>
+          </Video>
         </VideoContainer>
       </ContainerInner>
     </Container>
