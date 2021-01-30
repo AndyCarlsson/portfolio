@@ -6,7 +6,7 @@ export const Container = styled.div`
   width: 100%;
   gap: 10rem;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     display: flex;
     justify-content: center;
   }
@@ -20,7 +20,7 @@ export const InnerContainer = styled.div`
   justify-content: center;
   width: 100%;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     margin-top: 12vh;
     flex-direction: column;
   }
@@ -35,7 +35,7 @@ export const Section = styled.div`
   width: 100%;
   min-height: 93vh;
 
-  @media (max-width: 768px) {
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -45,12 +45,12 @@ export const Image = styled(animated.img)`
   width: 35%;
   border-radius: 10px;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     height: 90%;
     width: 90%;
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
     height: 60%;
     width: 60%;
   }

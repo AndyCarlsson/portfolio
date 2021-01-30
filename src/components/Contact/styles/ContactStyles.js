@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     min-height: 100vh;
     justify-content: center;
   }
@@ -21,7 +21,7 @@ export const ContainerInner = styled.div`
   align-items: center;
   gap: 2rem;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     justify-content: center;
   }
 
@@ -39,12 +39,12 @@ export const ItemContainer = styled(animated.div)`
   border-radius: 10px;
   background-color: #dbd9d3;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     gap: 1rem;
     width: 90%;
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
     gap: 1rem;
     width: 70%;
   }
@@ -53,7 +53,7 @@ export const ItemContainer = styled(animated.div)`
 export const Image = styled.img``;
 
 export const Details = styled.h2`
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     font-size: 1rem;
   }
 `;
