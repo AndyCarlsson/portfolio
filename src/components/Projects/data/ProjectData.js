@@ -2,6 +2,7 @@ import phone_xkcd_start from '../../../assets/images/phone_xkcd_start.webp';
 import phone_xkcd_fav from '../../../assets/images/phone_xkcd_fav.webp';
 import imac_sorting_algorithm from '../../../assets/images/imac_sorting_algorithm.webp';
 import imac_startpage from '../../../assets/images/imac_startpage.webp';
+import sorting_algo_vid from '../../../assets/videos/sorting_algo_vid.mp4';
 
 const ProjectData = [
   {
@@ -12,6 +13,7 @@ const ProjectData = [
     longDescription: 'Long Web App visualising different sorting algorithms',
     images: [imac_sorting_algorithm],
     imgAlt: 'Algorith Visualization',
+    video: sorting_algo_vid,
     stackList: ['Blazor', 'C#', 'html', 'css'],
     githubLink: 'https://github.com/AndyCarlsson/blazor-sorting-visualization',
     direction: 'row',

@@ -19,8 +19,6 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-import video from '../../assets/videos/sorting_algo_vid.mp4';
-
 export default function ProjectDetail(props) {
   const [project, setProject] = useState({});
 
@@ -68,8 +66,8 @@ export default function ProjectDetail(props) {
           <Description>Description</Description>
         </DescriptionContainer>
         <VideoContainer>
-          <Video width='1000' height='800' controls loop autoplay muted>
-            <source src={video} type='video/mp4' />
+          <Video width='1000' height='800' loop autoplay muted>
+            <source src={project.video} type='video/mp4' />
           </Video>
         </VideoContainer>
       </ContainerInner>
