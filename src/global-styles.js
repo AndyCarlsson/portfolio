@@ -9,13 +9,11 @@ export const GlobalStyles = createGlobalStyle`
 
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: #141414;
   background-color: #EAE7DC;
   font-size: 16px;
-  max-height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -28,4 +26,5 @@ p{
   width: 0px; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
+
 `;

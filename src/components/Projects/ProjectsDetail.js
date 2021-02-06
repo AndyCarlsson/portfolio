@@ -66,7 +66,7 @@ export default function ProjectDetail(props) {
           <Description>Description</Description>
         </DescriptionContainer>
         <VideoContainer>
-          <Video width='1000' height='800' loop autoplay muted>
+          <Video width='1000' height='800' controls loop autoplay muted>
             <source src={project.video} type='video/mp4' />
           </Video>
         </VideoContainer>
