@@ -45,6 +45,7 @@ export const BackButton = styled(Link)`
 export const ContainerInner = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 5rem;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -118,15 +119,20 @@ export const Image = styled.img`
 `;
 
 export const DescriptionContainer = styled.div`
-  background-color: lightgreen;
-  height: 50vh;
-  width: 70%;
+  display: flex;
+  align-items: center;
+  background-color: #dbd9d3;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 30%;
   @media (max-width: 480px) {
     width: 90%;
   }
 `;
 
-export const Description = styled.p``;
+export const Description = styled.p`
+  font-size: 1.2rem;
+`;
 
 export const VideoContainer = styled.div`
   display: flex;
