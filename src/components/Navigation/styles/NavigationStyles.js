@@ -84,7 +84,7 @@ export const Button = styled.button`
 `;
 
 export const ContainerSmallScreen = styled.div`
-  position: absolute;
+  position: fixed;
   display: flex;
   top: 20px;
   right: 20px;

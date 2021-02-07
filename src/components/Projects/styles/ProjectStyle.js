@@ -138,4 +138,8 @@ export const ImageContainer = styled.div`
 
 export const Image = styled(animated.img)`
   height: 100%;
+
+  @media only screen and (max-width: 480px) {
+    height: 80%;
+  }
 `;

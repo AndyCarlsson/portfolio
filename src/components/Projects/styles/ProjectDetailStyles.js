@@ -40,6 +40,10 @@ export const BackButton = styled(Link)`
   :hover {
     color: rgba(20, 20, 20, 1);
   }
+
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const ContainerInner = styled.div`
@@ -50,12 +54,11 @@ export const ContainerInner = styled.div`
   align-items: center;
   width: 100%;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     margin-top: 10vh;
-    gap: 2rem;
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     margin-top: 10vh;
     gap: 2rem;
   }
@@ -92,9 +95,10 @@ export const ImageContainer = styled.div`
   height: 80vh;
   gap: 5rem;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     flex-direction: column;
-    width: 100%;
+    gap: 1rem;
+    height: 100%;
   }
 `;
 
@@ -103,18 +107,20 @@ export const ImageContainerInner = styled.div`
   justify-content: center;
   align-items: ${({ align }) => align};
   height: 60vh;
+  width: 20%;
 
   @media (max-width: 480px) {
     width: 100%;
+    height: 100%;
   }
 `;
 
 export const Image = styled.img`
   height: 100%;
+  /* width: 100%; */
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     width: 90%;
-    height: 90%;
   }
 `;
 
@@ -125,8 +131,10 @@ export const DescriptionContainer = styled.div`
   padding: 2rem;
   border-radius: 10px;
   width: 30%;
-  @media (max-width: 480px) {
-    width: 90%;
+
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    border-radius: 0px;
   }
 `;
 
@@ -140,10 +148,17 @@ export const VideoContainer = styled.div`
   align-items: center;
   min-height: 50vh;
   width: 70%;
+  height: 75vh;
 
-  @media (max-width: 480px) {
-    width: 90%;
+  @media only screen and (max-width: 480px) {
+    width: 100%;
   }
 `;
 
-export const Video = styled.video``;
+export const Video = styled.video`
+  height: 100%;
+
+  @media only screen and (max-width: 480px) {
+    width: 90%;
+  }
+`;
