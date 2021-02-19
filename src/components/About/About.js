@@ -28,7 +28,12 @@ function About() {
       <InnerContainer>
         <Section direction='row' gap='5rem'>
           <Image src='/stockphotoTest.jpg' style={imgSpring} />
-          <Text style={textSpring}>Text om mig här</Text>
+          <div>
+            <Text style={textSpring}>Hi!</Text>
+            <Text>
+              My name is Andreas Carlsson. I am an aspiring developer from Gothenburg, Sweden.
+            </Text>
+          </div>
         </Section>
         <Section direction='column'>
           <EducationList />

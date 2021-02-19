@@ -56,4 +56,6 @@ export const Image = styled(animated.img)`
   }
 `;
 
-export const Text = styled(animated.p)``;
+export const Text = styled(animated.p)`
+  background-color: red;
+`;
