@@ -1,7 +1,14 @@
 import React from 'react';
 import EducationList from './EducationList';
 import WorkList from './WorkList';
-import { Container, InnerContainer, Image, Text, Section } from './styles/AboutStyles';
+import {
+  Container,
+  InnerContainer,
+  Image,
+  TextContainer,
+  Text,
+  Section,
+} from './styles/AboutStyles';
 import { useSpring } from 'react-spring';
 
 function About() {
@@ -28,12 +35,13 @@ function About() {
       <InnerContainer>
         <Section direction='row' gap='5rem'>
           <Image src='/stockphotoTest.jpg' style={imgSpring} />
-          <div>
+          <TextContainer>
             <Text style={textSpring}>Hi!</Text>
             <Text>
-              My name is Andreas Carlsson. I am an aspiring developer from Gothenburg, Sweden.
+              My name is Andreas Carlsson. I am an aspiring developer from
+              Gothenburg, Sweden.
             </Text>
-          </div>
+          </TextContainer>
         </Section>
         <Section direction='column'>
           <EducationList />
