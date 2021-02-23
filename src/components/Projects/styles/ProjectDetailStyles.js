@@ -60,7 +60,7 @@ export const ContainerInner = styled.div`
 
   @media only screen and (max-width: 768px) {
     margin-top: 10vh;
-    gap: 2rem;
+    gap: 5rem;
   }
 `;
 
@@ -151,6 +151,7 @@ export const VideoContainer = styled.div`
   height: 75vh;
 
   @media only screen and (max-width: 480px) {
+    display: none;
     width: 100%;
   }
 `;
