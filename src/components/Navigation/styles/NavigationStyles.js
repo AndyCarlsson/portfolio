@@ -138,3 +138,53 @@ export const SmallStyledNavLink = styled(NavLink).attrs({ activeClassName })`
     text-decoration: line-through #e85a4f 3px;
   }
 `;
+
+// Här under är de nya stylarna
+
+export const SmallNavUlTest = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
+  top: 0;
+  left: 0;
+  gap: 2.5rem;
+  list-style: none;
+  height: 100%;
+  width: 75%;
+  background-color: lightblue;
+  transition: all 0.3s ease-in-out;
+`;
+
+export const StyledBurger = styled.div`
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+
+  div {
+    width: 2.5rem;
+    height: 0.25rem;
+    background-color: ${({ open }) => (open ? '#ccc' : '#333')};
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+
+    &:nth-child(1) {
+      transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
+    }
+    &:nth-child(2) {
+      transform: ${({ open }) => (open ? 'translateX(100%)' : 'rotate(0)')};
+      opacity: ${({ open }) => (open ? 0 : 1)};
+    }
+    &:nth-child(3) {
+      transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
+    }
+  }
+`;

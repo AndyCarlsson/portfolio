@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import NavbarSmall from './NavbarSmall';
+import Burger from './Burger';
 
 export default function Navigation() {
   const [windowDimension, setWindowDimension] = useState(null);
@@ -19,5 +20,5 @@ export default function Navigation() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  return <>{isHamMenu ? <NavbarSmall /> : <Navbar />}</>;
+  return <>{isHamMenu ? <Burger /> : <Navbar />}</>;
 }
