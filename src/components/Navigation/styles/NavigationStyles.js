@@ -131,10 +131,10 @@ export const MenuMask = styled.div`
 export const SmallStyledNavLink = styled(NavLink).attrs({ activeClassName })`
   text-decoration: none;
   text-transform: uppercase;
-  color: rgba(20, 20, 20, 0.5);
+  color: #f3f3f3;
 
   &.${activeClassName} {
-    color: rgba(20, 20, 20, 1);
+    color: #f3f3f3;
     text-decoration: line-through #e85a4f 3px;
   }
 `;
@@ -145,16 +145,16 @@ export const SmallNavUlTest = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   position: fixed;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   top: 0;
   left: 0;
   gap: 2.5rem;
   list-style: none;
-  height: 100%;
-  width: 75%;
-  background-color: lightblue;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
   transition: all 0.3s ease-in-out;
 `;
 
@@ -167,11 +167,12 @@ export const StyledBurger = styled.div`
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
+  z-index: 20;
 
   div {
     width: 2.5rem;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? '#ccc' : '#333')};
+    background-color: ${({ open }) => (open ? '#f3f3f3' : '#000')};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;

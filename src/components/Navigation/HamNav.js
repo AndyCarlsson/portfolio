@@ -1,14 +1,16 @@
 import React from 'react';
-import { SmallNavUlTest, SmallNavLi } from './styles/NavigationStyles';
+import NavigationData from './data/NavigationData.json';
+import { SmallNavUlTest, SmallNavLi, SmallStyledNavLink } from './styles/NavigationStyles';
 
 const HamNav = ({ open }) => {
   return (
     <>
       <SmallNavUlTest open={open}>
-        <SmallNavLi>Home</SmallNavLi>
-        <SmallNavLi>Work</SmallNavLi>
-        <SmallNavLi>About</SmallNavLi>
-        <SmallNavLi>Contact</SmallNavLi>
+        {NavigationData.map((item) => (
+          <SmallNavLi key={item.id}>
+            <SmallStyledNavLink to={item.url}>{item.page}</SmallStyledNavLink>
+          </SmallNavLi>
+        ))}
       </SmallNavUlTest>
     </>
   );
