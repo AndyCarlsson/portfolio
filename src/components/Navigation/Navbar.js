@@ -26,7 +26,7 @@ export default function Navbar() {
             </ItemLi>
           ))}
         </ItemUl>
-        <Button>Resume</Button>
+        {/* <Button>Resume</Button> */}
       </Container>
     </>
   );

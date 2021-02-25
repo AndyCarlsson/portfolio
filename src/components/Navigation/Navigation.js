@@ -5,7 +5,7 @@ import Burger from './Burger';
 export default function Navigation() {
   const [windowDimension, setWindowDimension] = useState(null);
 
-  const isHamMenu = windowDimension <= 768;
+  const isHamMenu = windowDimension <= 1024;
 
   useEffect(() => {
     setWindowDimension(window.innerWidth);
