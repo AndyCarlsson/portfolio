@@ -1,10 +1,11 @@
 import React from 'react';
 import Navigation, { Start, Projects, ProjectDetail, About, Contact } from './components/index';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/'>
       <Navigation />
       <Switch>
         <Route path='/' exact component={Start} />

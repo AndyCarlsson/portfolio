@@ -36,7 +36,7 @@ export const Section = styled.div`
   width: 100%;
   min-height: 93vh;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     flex-direction: column;
   }
 `;
@@ -47,7 +47,7 @@ export const ImageContainer = styled.div`
   height: 70vh;
   width: 50%;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     justify-content: center;
   }
 `;
@@ -70,7 +70,7 @@ export const TextContainer = styled(animated.div)`
     width: 80%;
   }
 
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
     margin-bottom: 3rem;
     width: 60%;
   }
@@ -79,6 +79,6 @@ export const TextContainer = styled(animated.div)`
 export const Heading = styled.h1``;
 
 export const Text = styled.p`
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
   }
 `;

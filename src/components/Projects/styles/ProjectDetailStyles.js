@@ -17,7 +17,7 @@ export const Container = styled.div`
     gap: 2rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     min-height: 100vh;
     margin-top: 0;
     gap: 2rem;
@@ -58,7 +58,7 @@ export const ContainerInner = styled.div`
     margin-top: 10vh;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     margin-top: 10vh;
     gap: 5rem;
   }
@@ -137,7 +137,7 @@ export const DescriptionContainer = styled.div`
     border-radius: 0px;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     width: 90%;
   }
 `;
@@ -154,7 +154,7 @@ export const VideoContainer = styled.div`
   width: 70%;
   height: 75vh;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     width: 100%;
     height: 100%;
     margin-bottom: 8rem;
@@ -164,7 +164,7 @@ export const VideoContainer = styled.div`
 export const Video = styled.video`
   height: 100%;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     width: 80%;
   }
 `;

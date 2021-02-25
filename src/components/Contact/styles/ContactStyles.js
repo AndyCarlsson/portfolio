@@ -25,7 +25,7 @@ export const ContainerInner = styled.div`
     justify-content: center;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     justify-content: center;
   }
 `;
@@ -44,7 +44,7 @@ export const ItemContainer = styled(animated.div)`
     width: 90%;
   }
 
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
     gap: 1rem;
     width: 70%;
   }
