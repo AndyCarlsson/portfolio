@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
   height: 7vh;
-  max-width: 55%;
+  max-width: 100%;
   display: ${({ display }) => display};
   flex-direction: row;
   justify-content: space-between;

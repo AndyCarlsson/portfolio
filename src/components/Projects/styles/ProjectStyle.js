@@ -39,7 +39,7 @@ export const ProjectContainer = styled.div`
   gap: 2rem;
   border-radius: 5px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1450px) {
     height: 100%;
     width: 100%;
     flex-direction: column-reverse;

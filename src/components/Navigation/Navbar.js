@@ -13,6 +13,10 @@ export default function Navbar() {
     displayValue = 'flex';
   }
 
+  function dowloadResume() {
+    document.location = 'andycarlsson.github.io/about/cv/resume_AndreasC.pdf';
+  }
+
   return (
     <>
       <Container display={displayValue}>
@@ -26,7 +30,7 @@ export default function Navbar() {
             </ItemLi>
           ))}
         </ItemUl>
-        {/* <Button>Resume</Button> */}
+        <Button onClick={dowloadResume()}>Resume</Button>
       </Container>
     </>
   );
