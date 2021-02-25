@@ -13,7 +13,12 @@ export const Container = styled.div`
   font-size: 1rem;
 `;
 
-export const Logo = styled.h2``;
+export const Logo = styled.h2`
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  font-size: 2rem;
+`;
 
 export const ItemUl = styled.ul`
   width: 300px;

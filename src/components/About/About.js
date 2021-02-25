@@ -4,11 +4,14 @@ import WorkList from './WorkList';
 import {
   Container,
   InnerContainer,
+  ImageContainer,
   Image,
   TextContainer,
+  Heading,
   Text,
   Section,
 } from './styles/AboutStyles';
+import profile_pic from '../../assets/images/profilepic.webp';
 import { useSpring } from 'react-spring';
 
 function About() {
@@ -34,12 +37,18 @@ function About() {
     <Container>
       <InnerContainer>
         <Section direction='row' gap='5rem'>
-          <Image src='/stockphotoTest.jpg' style={imgSpring} />
-          <TextContainer>
-            <Text style={textSpring}>Hi!</Text>
+          <ImageContainer>
+            <Image src={profile_pic} style={imgSpring} />
+          </ImageContainer>
+          <TextContainer style={textSpring}>
+            <Heading>Hi!</Heading>
             <Text>
-              My name is Andreas Carlsson. I am an aspiring developer from
-              Gothenburg, Sweden.
+              My name is Andreas Carlsson. I am an aspiring developer from Gothenburg, Sweden.
+            </Text>
+            <Text>Learning new things and trying out stuff is what really motivates me.</Text>
+            <Text>
+              My goal is to one day be that guy that everyone comes to when they are stuck and need
+              input about a problem.
             </Text>
           </TextContainer>
         </Section>

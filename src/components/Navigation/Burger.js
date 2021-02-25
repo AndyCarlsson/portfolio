@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import NavigationData from './data/NavigationData.json';
-import HamNav from './HamNav';
 
 import {
+  StyledNavLink,
+  Logo,
   StyledBurger,
   SmallNavUlTest,
   SmallNavLi,
@@ -22,6 +23,9 @@ const Burger = () => {
 
   return (
     <>
+      <StyledNavLink exact to='/'>
+        <Logo>AC</Logo>
+      </StyledNavLink>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />

@@ -41,30 +41,44 @@ export const Section = styled.div`
   }
 `;
 
-export const Image = styled(animated.img)`
-  height: 35%;
-  width: 35%;
-  border-radius: 10px;
-
-  /* @media only screen and (max-width: 480px) {
-    height: 90%;
-    width: 90%;
-  } */
+export const ImageContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  height: 70vh;
+  width: 50%;
 
   @media only screen and (max-width: 768px) {
-    width: 90%;
+    justify-content: center;
   }
 `;
 
-export const TextContainer = styled.div`
-  width: 100%;
+export const Image = styled(animated.img)`
+  height: 100%;
+  border-radius: 10px;
+`;
+
+export const TextContainer = styled(animated.div)`
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  align-items: flex-start;
+  gap: 0.5rem;
+
+  @media only screen and (max-width: 481px) {
+    margin-bottom: 3rem;
+    width: 80%;
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: 3rem;
+    width: 60%;
+  }
 `;
 
-export const Text = styled(animated.p)`
+export const Heading = styled.h1``;
+
+export const Text = styled.p`
   @media only screen and (max-width: 768px) {
   }
 `;

@@ -21,13 +21,7 @@ export const Container = styled.div`
   grid-row-gap: 1rem;
   grid-column-gap: 5rem;
 
-  @media only screen and (max-width: 480px) {
-    padding: 3rem 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     padding: 3rem 0;
     display: flex;
     flex-direction: column;
@@ -65,8 +59,17 @@ export const ItemContainer = styled(animated.div)`
   gap: 1.5rem;
 
   @media only screen and (max-width: 480px) {
+    width: 90%;
     align-items: flex-start;
     gap: 1rem;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    width: 90%;
+    align-items: flex-start;
+    gap: 0rem;
     flex-direction: column;
   }
 `;
