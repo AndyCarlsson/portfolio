@@ -34,7 +34,6 @@ const Burger = () => {
           </SmallNavLi>
         ))}
       </SmallNavUlTest>
-      {/* <HamNav open={open} /> */}
     </>
   );
 };

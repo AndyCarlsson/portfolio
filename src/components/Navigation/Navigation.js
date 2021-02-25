@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import NavbarSmall from './NavbarSmall';
 import Burger from './Burger';
 
 export default function Navigation() {

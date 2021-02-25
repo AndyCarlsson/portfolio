@@ -136,6 +136,10 @@ export const DescriptionContainer = styled.div`
     width: 100%;
     border-radius: 0px;
   }
+
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const Description = styled.p`
@@ -151,15 +155,16 @@ export const VideoContainer = styled.div`
   height: 75vh;
 
   @media only screen and (max-width: 768px) {
-    display: none;
     width: 100%;
+    height: 100%;
+    margin-bottom: 8rem;
   }
 `;
 
 export const Video = styled.video`
   height: 100%;
 
-  @media only screen and (max-width: 480px) {
-    width: 90%;
+  @media only screen and (max-width: 768px) {
+    width: 80%;
   }
 `;
