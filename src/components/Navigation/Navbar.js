@@ -1,7 +1,16 @@
 import React from 'react';
-import { Container, Logo, ItemUl, ItemLi, Button, StyledNavLink } from './styles/NavigationStyles';
+import {
+  Container,
+  Logo,
+  ItemUl,
+  ItemLi,
+  Button,
+  StyledNavLink,
+  StyledA,
+} from './styles/NavigationStyles';
 import NavigationData from './data/NavigationData.json';
 import { useLocation } from 'react-router-dom';
+import resume from '../About/cv/resume_AndreasC.pdf';
 
 export default function Navbar() {
   const location = useLocation();
@@ -13,9 +22,10 @@ export default function Navbar() {
     displayValue = 'flex';
   }
 
-  function dowloadResume() {
-    document.location = 'andycarlsson.github.io/about/cv/resume_AndreasC.pdf';
-  }
+  // function dowloadResume() {
+  //   console.log('I metod');
+  //   document.location = 'andycarlsson.github.io/about/cv/resume_AndreasC.pdf';
+  // }
 
   return (
     <>
@@ -30,7 +40,9 @@ export default function Navbar() {
             </ItemLi>
           ))}
         </ItemUl>
-        <Button onClick={dowloadResume()}>Resume</Button>
+        <StyledA href={resume} target='_blank' rel='noreferrer'>
+          Resume
+        </StyledA>
       </Container>
     </>
   );

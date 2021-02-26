@@ -17,7 +17,7 @@ export const Logo = styled.h2`
   position: fixed;
   top: 15px;
   left: 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 `;
 
 export const ItemUl = styled.ul`
@@ -29,6 +29,23 @@ export const ItemUl = styled.ul`
 `;
 
 const activeClassName = 'nav-item-active';
+
+export const StyledA = styled.a`
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  border: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  color: rgba(20, 20, 20, 0.5);
+  border-bottom: transparent solid 2px;
+  transition: all 0.3s ease-in-out;
+
+  :hover {
+    color: rgba(20, 20, 20, 1);
+  }
+`;
 
 export const StyledNavLink = styled(NavLink).attrs({ activeClassName })`
   text-decoration: none;
