@@ -34,7 +34,7 @@ function Start() {
     <Container>
       <TextContainer>
         <Title style={titleStyle}>Andreas Carlsson.</Title>
-        <Description style={descStyle1}>Aspiring front end developer.</Description>
+        <Description style={descStyle1}>Aspiring developer.</Description>
         <Description style={descStyle2}>Gothenburg, Sweden.</Description>
         <Description style={descStyle3}>
           Minigolf<Span> [</Span>semi<Span>] </Span>pro.

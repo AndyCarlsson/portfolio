@@ -22,11 +22,6 @@ export default function Navbar() {
     displayValue = 'flex';
   }
 
-  // function dowloadResume() {
-  //   console.log('I metod');
-  //   document.location = 'andycarlsson.github.io/about/cv/resume_AndreasC.pdf';
-  // }
-
   return (
     <>
       <Container display={displayValue}>
