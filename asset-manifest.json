@@ -1,7 +1,12 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.js": "/portfolio/static/js/main.9568765b.chunk.js",
     "main.js.map": "/portfolio/static/js/main.9568765b.chunk.js.map",
+=======
+    "main.js": "/portfolio/static/js/main.dd13d7d4.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.dd13d7d4.chunk.js.map",
+>>>>>>> 49d01e18c12139e42825506aeb792edda1c287a4
     "runtime-main.js": "/portfolio/static/js/runtime-main.6f5b1907.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.6f5b1907.js.map",
     "static/js/2.796715dd.chunk.js": "/portfolio/static/js/2.796715dd.chunk.js",
@@ -15,6 +20,10 @@
     "static/media/phone_xkcd_fav.9fd67504.webp": "/portfolio/static/media/phone_xkcd_fav.9fd67504.webp",
     "static/media/phone_xkcd_start.14c010de.webp": "/portfolio/static/media/phone_xkcd_start.14c010de.webp",
     "static/media/profilepic.c12134e1.webp": "/portfolio/static/media/profilepic.c12134e1.webp",
+<<<<<<< HEAD
+=======
+    "static/media/resume_AndreasC.898b8dc4.pdf": "/portfolio/static/media/resume_AndreasC.898b8dc4.pdf",
+>>>>>>> 49d01e18c12139e42825506aeb792edda1c287a4
     "static/media/sorting_algo_vid.cf26d7ec.mp4": "/portfolio/static/media/sorting_algo_vid.cf26d7ec.mp4",
     "static/media/startpage_vid.44cbade5.mp4": "/portfolio/static/media/startpage_vid.44cbade5.mp4",
     "static/media/xkcd_vid.9c3411b6.webm": "/portfolio/static/media/xkcd_vid.9c3411b6.webm"
@@ -22,6 +31,10 @@
   "entrypoints": [
     "static/js/runtime-main.6f5b1907.js",
     "static/js/2.796715dd.chunk.js",
+<<<<<<< HEAD
     "static/js/main.9568765b.chunk.js"
+=======
+    "static/js/main.dd13d7d4.chunk.js"
+>>>>>>> 49d01e18c12139e42825506aeb792edda1c287a4
   ]
 }
