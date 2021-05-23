@@ -1,5 +1,5 @@
 # Portfolio
-[portfoliosc](https://user-images.githubusercontent.com/54662276/119255982-b59bd080-bbbe-11eb-85f4-78702c322dda.png)
+![portfoliosc](https://user-images.githubusercontent.com/54662276/119255982-b59bd080-bbbe-11eb-85f4-78702c322dda.png)
 
 ## Overview
 This is my portfolio showcasing some of my projects. For a working live demo see: https://andycarlsson.github.io/portfolio/#/.
